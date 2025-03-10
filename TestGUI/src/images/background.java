@@ -12,7 +12,7 @@ public class background extends JPanel {
     
     public background(){
         setBackground(new Color(242, 242, 242));
-        backgroundImage = new ImageIcon(getClass().getResource("/images/gradientbg.png")).getImage();
+        backgroundImage = new ImageIcon(getClass().getResource("/images/bg final.png")).getImage();
         
     }
     
