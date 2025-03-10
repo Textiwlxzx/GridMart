@@ -57,7 +57,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="407" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="rectangle1" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="rectangle2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -79,7 +79,7 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace pref="228" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="rectangle4" min="-2" max="-2" attributes="0"/>
                       <Component id="rectangle3" min="-2" max="-2" attributes="0"/>
