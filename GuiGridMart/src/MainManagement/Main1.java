@@ -1,21 +1,56 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package MainManagement;
 
-/**
- *
- * @author chonticha
- */
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.Timer;
+
+
 public class Main1 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Main1
-     */
+    
     public Main1() {
         initComponents();
+        dt();
+        times();
     }
+    
+    public void dt() {
+        
+        Date d = new Date();
+    
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    
+        String dd = sdf.format(d);
+        date.setText(dd);
+    }
+
+    Timer t;
+    SimpleDateFormat st;
+
+    public void times() {
+    
+        t = new Timer(0, new ActionListener() {
+        
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            
+            
+                Date dt = new Date();
+                st = new SimpleDateFormat("hh:mm:ss a");
+            
+                String tt = st.format(dt);
+                time.setText(tt);
+        
+            }
+        }); {
+    
+        t.start(); 
+    }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -36,6 +71,10 @@ public class Main1 extends javax.swing.JFrame {
         buttonClear5 = new button.ButtonClear();
         labelText2 = new CustomFont.LabelText();
         buttonNoFillNoStroke2 = new button.ButtonNoFillNoStroke();
+        labelText3 = new CustomFont.LabelText();
+        date = new CustomFont.LabelText();
+        labelText5 = new CustomFont.LabelText();
+        time = new CustomFont.LabelText();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1440, 1024));
@@ -140,12 +179,28 @@ public class Main1 extends javax.swing.JFrame {
         buttonNoFillNoStroke2.setText("Log out");
         buttonNoFillNoStroke2.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
 
+        labelText3.setText("Date");
+
+        date.setText("0");
+
+        labelText5.setText("Time");
+
+        time.setText("0");
+
         javax.swing.GroupLayout rectangleBorder2Layout = new javax.swing.GroupLayout(rectangleBorder2);
         rectangleBorder2.setLayout(rectangleBorder2Layout);
         rectangleBorder2Layout.setHorizontalGroup(
             rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder2Layout.createSequentialGroup()
-                .addContainerGap(714, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
+                .addComponent(labelText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -160,7 +215,11 @@ public class Main1 extends javax.swing.JFrame {
                 .addGroup(rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonNoFillNoStroke2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonNoFillNoStroke2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
 
@@ -265,8 +324,12 @@ public class Main1 extends javax.swing.JFrame {
     private button.ButtonClear buttonClear4;
     private button.ButtonClear buttonClear5;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
+    private CustomFont.LabelText date;
     private CustomFont.LabelText labelText2;
+    private CustomFont.LabelText labelText3;
+    private CustomFont.LabelText labelText5;
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder rectangleBorder2;
+    private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
 }
