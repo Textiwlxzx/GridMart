@@ -13,7 +13,7 @@ public class ButtonClear extends JButton{
         setOpaque(false);
         setContentAreaFilled(false);
         setBorderPainted(false);
-        setForeground(new Color(0,0,0));
+        setForeground(new Color(54, 54, 54));
         setFont(new Font("Afacad", Font.BOLD, 16));
     }
     

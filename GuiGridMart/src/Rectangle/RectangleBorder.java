@@ -11,7 +11,7 @@ public class RectangleBorder extends JPanel {
     public RectangleBorder() {
         setOpaque(false);
         setBackground(new Color(255, 255, 255, 127));
-        setForeground(new Color(0,0,0));
+        setForeground(new Color(54, 54, 54));
 
     }
 
@@ -29,7 +29,7 @@ public class RectangleBorder extends JPanel {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         g2.setColor(getBackground());
-        g2.fillRoundRect(0, 0, getWidth(), getHeight(), 80, 80);
+        g2.fillRoundRect(0, 0, getWidth(), getHeight(), radius, radius);
 
         super.paintComponent(g);
         g2.dispose();
@@ -41,7 +41,7 @@ public class RectangleBorder extends JPanel {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         g2.setColor(getForeground());
-        g2.draw(new RoundRectangle2D.Float(0, 0, getWidth() - 1, getHeight() - 1, 30, 30));
+        g2.draw(new RoundRectangle2D.Float(0, 0, getWidth() - 1, getHeight() - 1, radius, radius));
         
         super.paintComponent(g);
         g2.dispose();
