@@ -10,6 +10,6 @@ public class ButtonIcon extends JButton{
         setContentAreaFilled(false);
         setFocusPainted(false);
         setBorderPainted(false);
-        setFont(new Font("Arial", Font.BOLD, 16));
+        setFont(new Font("Afacad", Font.BOLD, 16));
     }
 }

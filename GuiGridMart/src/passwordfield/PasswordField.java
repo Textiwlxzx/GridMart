@@ -1,6 +1,7 @@
 package passwordfield;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
@@ -48,6 +49,7 @@ public class PasswordField extends JPasswordField {
         setSelectionColor(new Color(133, 209, 255));
         setBorder(new EmptyBorder(10, 12, 15, 12));
         setBackground(new Color(255, 255, 255));
+        setFont(new Font("Afacad", Font.BOLD, 16));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package textfield;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
@@ -12,6 +13,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.basic.BasicTextFieldUI;
 import swing.shadow.ShadowRenderer;
+
 
 public class TextField extends JTextField {
 
@@ -48,6 +50,7 @@ public class TextField extends JTextField {
         setSelectionColor(new Color(133, 209, 255));
         setBorder(new EmptyBorder(10, 12, 15, 12));
         setBackground(new Color(255, 255, 255));
+        setFont(new Font("Afacad", Font.BOLD, 16));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package button;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
@@ -54,6 +55,7 @@ public class ButtonRaven extends JButton {
         setContentAreaFilled(false);
         setBackground(new Color(255, 255, 255));
         setForeground(new Color(80, 80, 80));
+        setFont(new Font("Afacad", Font.BOLD, 16));
         rippleEffect.setRippleColor(new Color(220, 220, 220));
     }
 

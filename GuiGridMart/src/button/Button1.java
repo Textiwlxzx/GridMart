@@ -2,6 +2,7 @@ package button;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.Font;
 import java.awt.geom.RoundRectangle2D;
 
 public class Button1 extends JButton {
@@ -12,7 +13,7 @@ public class Button1 extends JButton {
         setContentAreaFilled(false);
         setBackground(new Color(206, 192, 236));
         setForeground(new Color(255, 255, 255));
-        setFont(new Font("Arial", Font.BOLD, 16));
+        setFont(new Font("Afacad", Font.BOLD, 16));
     }
 
     public int getRadius() {

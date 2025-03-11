@@ -1,6 +1,7 @@
 package button;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
@@ -66,6 +67,7 @@ public class MyButton extends JButton {
         colorOver = new Color(179, 250, 160);
         colorClick = new Color(152, 184, 144);
         borderColor = new Color(30, 136, 56);
+        setFont(new Font("Afacad", Font.BOLD, 16));
         setContentAreaFilled(false);
         //  Add event mouse
         addMouseListener(new MouseAdapter() {
