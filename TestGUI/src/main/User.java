@@ -30,21 +30,55 @@ public class User extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         background2 = new images.background();
         rectangle1 = new images.Rectangle();
+        button11 = new button.Button1();
+        button31 = new button.Button3();
+        button32 = new button.Button3();
+        button12 = new button.Button1();
 
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
+        button11.setText("button11");
+
+        button31.setText("button31");
+
+        button32.setText("button32");
+
+        button12.setText("button12");
+
         javax.swing.GroupLayout rectangle1Layout = new javax.swing.GroupLayout(rectangle1);
         rectangle1.setLayout(rectangle1Layout);
         rectangle1Layout.setHorizontalGroup(
             rectangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 999, Short.MAX_VALUE)
+            .addGroup(rectangle1Layout.createSequentialGroup()
+                .addGap(101, 101, 101)
+                .addGroup(rectangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button32, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(rectangle1Layout.createSequentialGroup()
+                        .addGroup(rectangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(button31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(96, 96, 96)
+                        .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(588, Short.MAX_VALUE))
         );
         rectangle1Layout.setVerticalGroup(
             rectangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 555, Short.MAX_VALUE)
+            .addGroup(rectangle1Layout.createSequentialGroup()
+                .addGroup(rectangle1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(rectangle1Layout.createSequentialGroup()
+                        .addGap(95, 95, 95)
+                        .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(rectangle1Layout.createSequentialGroup()
+                        .addGap(104, 104, 104)
+                        .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29)
+                .addComponent(button31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(button32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout background2Layout = new javax.swing.GroupLayout(background2);
@@ -116,6 +150,10 @@ public class User extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private images.background background2;
+    private button.Button1 button11;
+    private button.Button1 button12;
+    private button.Button3 button31;
+    private button.Button3 button32;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private images.Rectangle rectangle1;

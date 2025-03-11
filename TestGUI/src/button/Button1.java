@@ -15,7 +15,7 @@ public class Button1 extends JButton{
         setBorderPainted(false);
         setBackground(new Color(100, 200, 255));
         setForeground(new Color(0,0,0));
-        setFont(new Font("Arial", Font.BOLD, 16));
+        setFont(new Font("Afacad", Font.BOLD, 16));
     }
     
     public int getRadius() {

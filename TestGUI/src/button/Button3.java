@@ -7,11 +7,14 @@ import javax.swing.*;
 public class Button3 extends JButton{
     
     private int radius = 0;
+    private Font font;
     
     public Button3(){
         setContentAreaFilled(false);
         setBackground(new Color(100, 200, 255));
-        setFont(new Font("Arial", Font.BOLD, 16));
+        setFont(new Font("Cousine", Font.BOLD, 16));
+        font = new Font("Afacad", Font.PLAIN, 24);
+        setFont(font);
     }
     
     public int getRadius() {
