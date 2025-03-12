@@ -75,18 +75,16 @@ public class Main1 extends javax.swing.JFrame {
         date = new CustomFont.LabelText();
         labelText5 = new CustomFont.LabelText();
         time = new CustomFont.LabelText();
+        buttonIcon1 = new button.ButtonIcon();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1440, 1024));
         setResizable(false);
 
         background1.setPreferredSize(new java.awt.Dimension(1440, 1024));
 
-        rectangleBorder1.setForeground(new java.awt.Color(54, 54, 54));
         rectangleBorder1.setPreferredSize(new java.awt.Dimension(321, 817));
         rectangleBorder1.setRadius(65);
 
-        buttonClear2.setForeground(new java.awt.Color(54, 54, 54));
         buttonClear2.setText("Product");
         buttonClear2.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear2.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -97,7 +95,6 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        buttonClear1.setForeground(new java.awt.Color(54, 54, 54));
         buttonClear1.setText("Order");
         buttonClear1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear1.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -108,7 +105,6 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        buttonClear3.setForeground(new java.awt.Color(54, 54, 54));
         buttonClear3.setText("Expired");
         buttonClear3.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear3.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -119,7 +115,6 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        buttonClear4.setForeground(new java.awt.Color(54, 54, 54));
         buttonClear4.setText("Purchased");
         buttonClear4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear4.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -157,11 +152,9 @@ public class Main1 extends javax.swing.JFrame {
                 .addContainerGap(407, Short.MAX_VALUE))
         );
 
-        rectangleBorder2.setForeground(new java.awt.Color(54, 54, 54));
         rectangleBorder2.setPreferredSize(new java.awt.Dimension(1337, 99));
         rectangleBorder2.setRadius(65);
 
-        buttonClear5.setForeground(new java.awt.Color(54, 54, 54));
         buttonClear5.setText("Total");
         buttonClear5.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear5.setPreferredSize(new java.awt.Dimension(143, 54));
@@ -172,10 +165,8 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        labelText2.setForeground(new java.awt.Color(54, 54, 54));
         labelText2.setText("Employee's name");
 
-        buttonNoFillNoStroke2.setForeground(new java.awt.Color(54, 54, 54));
         buttonNoFillNoStroke2.setText("Log out");
         buttonNoFillNoStroke2.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
 
@@ -186,6 +177,8 @@ public class Main1 extends javax.swing.JFrame {
         labelText5.setText("Time");
 
         time.setText("0");
+
+        buttonIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/setting.png"))); // NOI18N
 
         javax.swing.GroupLayout rectangleBorder2Layout = new javax.swing.GroupLayout(rectangleBorder2);
         rectangleBorder2.setLayout(rectangleBorder2Layout);
@@ -206,20 +199,24 @@ public class Main1 extends javax.swing.JFrame {
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
                 .addComponent(buttonNoFillNoStroke2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(109, 109, 109))
+                .addGap(26, 26, 26)
+                .addComponent(buttonIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
         rectangleBorder2Layout.setVerticalGroup(
             rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rectangleBorder2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder2Layout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
-                .addGroup(rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonNoFillNoStroke2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(buttonIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(rectangleBorder2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonNoFillNoStroke2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelText3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(22, 22, 22))
         );
 
@@ -230,9 +227,12 @@ public class Main1 extends javax.swing.JFrame {
             .addGroup(background1Layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(52, Short.MAX_VALUE))
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(52, Short.MAX_VALUE))
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         background1Layout.setVerticalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,6 +323,7 @@ public class Main1 extends javax.swing.JFrame {
     private button.ButtonClear buttonClear3;
     private button.ButtonClear buttonClear4;
     private button.ButtonClear buttonClear5;
+    private button.ButtonIcon buttonIcon1;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
     private CustomFont.LabelText date;
     private CustomFont.LabelText labelText2;

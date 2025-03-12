@@ -3,9 +3,6 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1440, 1024]"/>
-    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -53,10 +50,15 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="51" pref="51" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="rectangleBorder2" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="rectangleBorder1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rectangleBorder2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="52" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="rectangleBorder1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="52" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -75,9 +77,6 @@
       <SubComponents>
         <Container class="Rectangle.RectangleBorder" name="rectangleBorder1">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="36" green="36" red="36" type="rgb"/>
-            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[321, 817]"/>
             </Property>
@@ -118,9 +117,6 @@
           <SubComponents>
             <Component class="button.ButtonClear" name="buttonClear2">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Product"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="28" style="0"/>
@@ -136,9 +132,6 @@
             </Component>
             <Component class="button.ButtonClear" name="buttonClear1">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Order"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="28" style="0"/>
@@ -154,9 +147,6 @@
             </Component>
             <Component class="button.ButtonClear" name="buttonClear3">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Expired"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="28" style="0"/>
@@ -172,9 +162,6 @@
             </Component>
             <Component class="button.ButtonClear" name="buttonClear4">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Purchased"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="28" style="0"/>
@@ -192,9 +179,6 @@
         </Container>
         <Container class="Rectangle.RectangleBorder" name="rectangleBorder2">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="36" green="36" red="36" type="rgb"/>
-            </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[1337, 99]"/>
             </Property>
@@ -219,22 +203,27 @@
                       <Component id="labelText2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="buttonNoFillNoStroke2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="buttonIcon1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="23" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="buttonClear5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelText2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="buttonNoFillNoStroke2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelText3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="date" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelText5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="time" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="buttonIcon1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="buttonClear5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelText2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="buttonNoFillNoStroke2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelText3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="date" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelText5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="time" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
@@ -244,9 +233,6 @@
           <SubComponents>
             <Component class="button.ButtonClear" name="buttonClear5">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Total"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="28" style="0"/>
@@ -262,17 +248,11 @@
             </Component>
             <Component class="CustomFont.LabelText" name="labelText2">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Employee&apos;s name"/>
               </Properties>
             </Component>
             <Component class="button.ButtonNoFillNoStroke" name="buttonNoFillNoStroke2">
               <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="36" green="36" red="36" type="rgb"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Log out"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Afacad" size="24" style="0"/>
@@ -297,6 +277,13 @@
             <Component class="CustomFont.LabelText" name="time">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="button.ButtonIcon" name="buttonIcon1">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/images/setting.png"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
