@@ -36,7 +36,12 @@ public class Expired extends javax.swing.JFrame {
         rectangle3 = new images.Rectangle();
         rectangle4 = new images.Rectangle();
         rectangle5 = new images.Rectangle();
+        rectangle8 = new images.Rectangle();
+        rectangle9 = new images.Rectangle();
+        rectangle10 = new images.Rectangle();
+        rectangle13 = new images.Rectangle();
         rectangle6 = new images.Rectangle();
+        rectangle14 = new images.Rectangle();
         rectangle7 = new images.Rectangle();
 
         jLabel3.setText("jLabel3");
@@ -98,31 +103,123 @@ public class Expired extends javax.swing.JFrame {
 
         rectangle5.setPreferredSize(new java.awt.Dimension(321, 792));
 
+        rectangle8.setPreferredSize(new java.awt.Dimension(278, 60));
+
+        javax.swing.GroupLayout rectangle8Layout = new javax.swing.GroupLayout(rectangle8);
+        rectangle8.setLayout(rectangle8Layout);
+        rectangle8Layout.setHorizontalGroup(
+            rectangle8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 278, Short.MAX_VALUE)
+        );
+        rectangle8Layout.setVerticalGroup(
+            rectangle8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
+        rectangle9.setPreferredSize(new java.awt.Dimension(278, 60));
+
+        javax.swing.GroupLayout rectangle9Layout = new javax.swing.GroupLayout(rectangle9);
+        rectangle9.setLayout(rectangle9Layout);
+        rectangle9Layout.setHorizontalGroup(
+            rectangle9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 278, Short.MAX_VALUE)
+        );
+        rectangle9Layout.setVerticalGroup(
+            rectangle9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
+        rectangle10.setPreferredSize(new java.awt.Dimension(278, 60));
+
+        javax.swing.GroupLayout rectangle10Layout = new javax.swing.GroupLayout(rectangle10);
+        rectangle10.setLayout(rectangle10Layout);
+        rectangle10Layout.setHorizontalGroup(
+            rectangle10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 278, Short.MAX_VALUE)
+        );
+        rectangle10Layout.setVerticalGroup(
+            rectangle10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
+        rectangle13.setPreferredSize(new java.awt.Dimension(278, 60));
+
+        javax.swing.GroupLayout rectangle13Layout = new javax.swing.GroupLayout(rectangle13);
+        rectangle13.setLayout(rectangle13Layout);
+        rectangle13Layout.setHorizontalGroup(
+            rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 278, Short.MAX_VALUE)
+        );
+        rectangle13Layout.setVerticalGroup(
+            rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 60, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout rectangle5Layout = new javax.swing.GroupLayout(rectangle5);
         rectangle5.setLayout(rectangle5Layout);
         rectangle5Layout.setHorizontalGroup(
             rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 321, Short.MAX_VALUE)
+            .addGroup(rectangle5Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rectangle10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rectangle9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rectangle8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         rectangle5Layout.setVerticalGroup(
             rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 792, Short.MAX_VALUE)
+            .addGroup(rectangle5Layout.createSequentialGroup()
+                .addGap(84, 84, 84)
+                .addComponent(rectangle8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(rectangle9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(rectangle10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(384, Short.MAX_VALUE))
         );
 
         rectangle6.setPreferredSize(new java.awt.Dimension(1337, 99));
+
+        rectangle14.setPreferredSize(new java.awt.Dimension(143, 54));
+
+        javax.swing.GroupLayout rectangle14Layout = new javax.swing.GroupLayout(rectangle14);
+        rectangle14.setLayout(rectangle14Layout);
+        rectangle14Layout.setHorizontalGroup(
+            rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 143, Short.MAX_VALUE)
+        );
+        rectangle14Layout.setVerticalGroup(
+            rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 54, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout rectangle6Layout = new javax.swing.GroupLayout(rectangle6);
         rectangle6.setLayout(rectangle6Layout);
         rectangle6Layout.setHorizontalGroup(
             rectangle6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1337, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle6Layout.createSequentialGroup()
+                .addContainerGap(694, Short.MAX_VALUE)
+                .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(500, 500, 500))
         );
         rectangle6Layout.setVerticalGroup(
             rectangle6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 99, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle6Layout.createSequentialGroup()
+                .addContainerGap(23, Short.MAX_VALUE)
+                .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(22, 22, 22))
         );
 
         rectangle7.setPreferredSize(new java.awt.Dimension(134, 33));
+        rectangle7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rectangle7MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout rectangle7Layout = new javax.swing.GroupLayout(rectangle7);
         rectangle7.setLayout(rectangle7Layout);
@@ -132,7 +229,7 @@ public class Expired extends javax.swing.JFrame {
         );
         rectangle7Layout.setVerticalGroup(
             rectangle7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 33, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout background2Layout = new javax.swing.GroupLayout(background2);
@@ -182,7 +279,7 @@ public class Expired extends javax.swing.JFrame {
                                     .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(65, 65, 65)
                                 .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -199,6 +296,10 @@ public class Expired extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void rectangle7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rectangle7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rectangle7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -241,11 +342,18 @@ public class Expired extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JSeparator jSeparator1;
     private images.Rectangle rectangle1;
+    private images.Rectangle rectangle10;
+    private images.Rectangle rectangle11;
+    private images.Rectangle rectangle12;
+    private images.Rectangle rectangle13;
+    private images.Rectangle rectangle14;
     private images.Rectangle rectangle2;
     private images.Rectangle rectangle3;
     private images.Rectangle rectangle4;
     private images.Rectangle rectangle5;
     private images.Rectangle rectangle6;
     private images.Rectangle rectangle7;
+    private images.Rectangle rectangle8;
+    private images.Rectangle rectangle9;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84e3dfc5-0e48-454a-94eb-6fc6ad2f8f5e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TestGUI/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Expired1/Expired$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Expired1/Expired.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Expired1/Expired.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/PolygonCorner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollBarWin11UI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollBarWin11UI$ScrollButton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollBarWin11UI$ScrollButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollBarWin11UI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollPaneWin11$ScrollLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/Scroll/ScrollPaneWin11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/Button.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/Button1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/MyButton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/MyButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/Testing$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/Testing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/button/Testing.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/GradientPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/Rectangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/User.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/User1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/background.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/gradientbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/Testing1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/Testing1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/Testing1$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/Testing1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/Testing1.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/User$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/main/User.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/passwordfield/PasswordField$TextUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/passwordfield/PasswordField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/swing/shadow/GraphicsUtilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/swing/shadow/ShadowRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/swing/shadow/util/RippleEffect$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/swing/shadow/util/RippleEffect$Effect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/swing/shadow/util/RippleEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/textfield/TextField$TextUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/build/classes/textfield/TextField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestGUI/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestGUI/nbproject/private/private.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2uCpQgAU6r9PCLcHUA9igq10mSP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "GUI/Expired",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Predator/OneDrive/Desktop/Lab OOP"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84e3dfc5-0e48-454a-94eb-6fc6ad2f8f5e" name="Changes" comment="" />
+      <created>1741762396217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741762396217</updated>
+    </task>
+    <servers />
+  </component>
+</project>
