@@ -78,17 +78,17 @@ public class Main extends javax.swing.JFrame {
         labelText5 = new CustomFont.LabelText();
         time = new CustomFont.LabelText();
         buttonIcon1 = new button.ButtonIcon();
-        rectangle2 = new Order1.Rectangle();
-        rectangle3 = new Order1.Rectangle();
-        rectangleBorder3 = new Order1.RectangleBorder();
+        rectangle11 = new Rectangle.Rectangle1();
+        rectangle12 = new Rectangle.Rectangle1();
+        rectangle13 = new Rectangle.Rectangle1();
+        rectangle14 = new Rectangle.Rectangle1();
+        rectangleBorder11 = new Rectangle.RectangleBorder1();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         button11 = new button.Button1();
-        rectangle6 = new Order1.Rectangle();
-        rectangle7 = new Order1.Rectangle();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -108,6 +108,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        buttonClear1.setBackground(new java.awt.Color(206, 192, 236));
         buttonClear1.setText("Order");
         buttonClear1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear1.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -142,7 +143,7 @@ public class Main extends javax.swing.JFrame {
         rectangleBorder1.setLayout(rectangleBorder1Layout);
         rectangleBorder1Layout.setHorizontalGroup(
             rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder1Layout.createSequentialGroup()
+            .addGroup(rectangleBorder1Layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -233,44 +234,66 @@ public class Main extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
-        rectangle2.setPreferredSize(new java.awt.Dimension(287, 288));
-        rectangle2.setRadius(35);
+        rectangle11.setPreferredSize(new java.awt.Dimension(287, 288));
+        rectangle11.setRadius(35);
 
-        javax.swing.GroupLayout rectangle2Layout = new javax.swing.GroupLayout(rectangle2);
-        rectangle2.setLayout(rectangle2Layout);
-        rectangle2Layout.setHorizontalGroup(
-            rectangle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout rectangle11Layout = new javax.swing.GroupLayout(rectangle11);
+        rectangle11.setLayout(rectangle11Layout);
+        rectangle11Layout.setHorizontalGroup(
+            rectangle11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 287, Short.MAX_VALUE)
         );
-        rectangle2Layout.setVerticalGroup(
-            rectangle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        rectangle11Layout.setVerticalGroup(
+            rectangle11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 288, Short.MAX_VALUE)
         );
 
-        rectangle3.setPreferredSize(new java.awt.Dimension(287, 288));
-        rectangle3.setRadius(35);
+        rectangle12.setPreferredSize(new java.awt.Dimension(287, 288));
+        rectangle12.setRadius(35);
 
-        javax.swing.GroupLayout rectangle3Layout = new javax.swing.GroupLayout(rectangle3);
-        rectangle3.setLayout(rectangle3Layout);
-        rectangle3Layout.setHorizontalGroup(
-            rectangle3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout rectangle12Layout = new javax.swing.GroupLayout(rectangle12);
+        rectangle12.setLayout(rectangle12Layout);
+        rectangle12Layout.setHorizontalGroup(
+            rectangle12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 287, Short.MAX_VALUE)
         );
-        rectangle3Layout.setVerticalGroup(
-            rectangle3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        rectangle12Layout.setVerticalGroup(
+            rectangle12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 288, Short.MAX_VALUE)
         );
 
-        rectangleBorder3.setPreferredSize(new java.awt.Dimension(327, 801));
+        rectangle13.setPreferredSize(new java.awt.Dimension(287, 288));
+        rectangle13.setRadius(35);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        javax.swing.GroupLayout rectangle13Layout = new javax.swing.GroupLayout(rectangle13);
+        rectangle13.setLayout(rectangle13Layout);
+        rectangle13Layout.setHorizontalGroup(
+            rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 287, Short.MAX_VALUE)
+        );
+        rectangle13Layout.setVerticalGroup(
+            rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 288, Short.MAX_VALUE)
+        );
+
+        rectangle14.setPreferredSize(new java.awt.Dimension(287, 288));
+        rectangle14.setRadius(35);
+
+        javax.swing.GroupLayout rectangle14Layout = new javax.swing.GroupLayout(rectangle14);
+        rectangle14.setLayout(rectangle14Layout);
+        rectangle14Layout.setHorizontalGroup(
+            rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 287, Short.MAX_VALUE)
+        );
+        rectangle14Layout.setVerticalGroup(
+            rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 288, Short.MAX_VALUE)
+        );
+
+        rectangleBorder11.setPreferredSize(new java.awt.Dimension(327, 801));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Order");
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setText("Payment");
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel3.setText("Total");
 
         jRadioButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jRadioButton1.setText("Cash");
@@ -282,11 +305,21 @@ public class Main extends javax.swing.JFrame {
 
         jRadioButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jRadioButton2.setText("QR Code");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel2.setText("Total");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel3.setText("Payment");
 
         button11.setForeground(new java.awt.Color(0, 0, 0));
         button11.setText("Pay");
-        button11.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
-        button11.setHideActionText(true);
+        button11.setFont(new java.awt.Font("Afacad", 1, 36)); // NOI18N
         button11.setPreferredSize(new java.awt.Dimension(270, 73));
         button11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,71 +327,40 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout rectangleBorder3Layout = new javax.swing.GroupLayout(rectangleBorder3);
-        rectangleBorder3.setLayout(rectangleBorder3Layout);
-        rectangleBorder3Layout.setHorizontalGroup(
-            rectangleBorder3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rectangleBorder3Layout.createSequentialGroup()
-                .addGroup(rectangleBorder3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rectangleBorder3Layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(jLabel1))
-                    .addGroup(rectangleBorder3Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addGroup(rectangleBorder3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)))
-                    .addGroup(rectangleBorder3Layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26))
-        );
-        rectangleBorder3Layout.setVerticalGroup(
-            rectangleBorder3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rectangleBorder3Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+        javax.swing.GroupLayout rectangleBorder11Layout = new javax.swing.GroupLayout(rectangleBorder11);
+        rectangleBorder11.setLayout(rectangleBorder11Layout);
+        rectangleBorder11Layout.setHorizontalGroup(
+            rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder11Layout.createSequentialGroup()
+                .addGap(136, 136, 136)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 427, Short.MAX_VALUE)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(122, 122, 122))
+            .addGroup(rectangleBorder11Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3)
+                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27))
+        );
+        rectangleBorder11Layout.setVerticalGroup(
+            rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(rectangleBorder11Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 431, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19)
+                .addComponent(jLabel3)
+                .addGap(17, 17, 17)
+                .addComponent(jRadioButton1)
                 .addGap(22, 22, 22)
                 .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addGap(39, 39, 39)
                 .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
-        );
-
-        rectangle6.setPreferredSize(new java.awt.Dimension(287, 288));
-        rectangle6.setRadius(35);
-
-        javax.swing.GroupLayout rectangle6Layout = new javax.swing.GroupLayout(rectangle6);
-        rectangle6.setLayout(rectangle6Layout);
-        rectangle6Layout.setHorizontalGroup(
-            rectangle6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
-        );
-        rectangle6Layout.setVerticalGroup(
-            rectangle6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
-        );
-
-        rectangle7.setPreferredSize(new java.awt.Dimension(287, 288));
-        rectangle7.setRadius(35);
-
-        javax.swing.GroupLayout rectangle7Layout = new javax.swing.GroupLayout(rectangle7);
-        rectangle7.setLayout(rectangle7Layout);
-        rectangle7Layout.setHorizontalGroup(
-            rectangle7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
-        );
-        rectangle7Layout.setVerticalGroup(
-            rectangle7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+                .addGap(25, 25, 25))
         );
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
@@ -372,16 +374,18 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(39, 39, 39)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(background1Layout.createSequentialGroup()
+                                .addComponent(rectangle12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(39, 39, 39)
+                                .addComponent(rectangle11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(background1Layout.createSequentialGroup()
+                                .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(68, 68, 68)
-                        .addComponent(rectangleBorder3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(23, 23, 23))
+                        .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(54, 54, 54))
         );
         background1Layout.setVerticalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -391,16 +395,16 @@ public class Main extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rectangleBorder3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(rectangle11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rectangle12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rectangle6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35))
         );
 
@@ -440,6 +444,10 @@ public class Main extends javax.swing.JFrame {
     private void buttonClear5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear5ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
@@ -506,13 +514,13 @@ public class Main extends javax.swing.JFrame {
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
     private CustomFont.LabelText labelText5;
-    private Order1.Rectangle rectangle2;
-    private Order1.Rectangle rectangle3;
-    private Order1.Rectangle rectangle6;
-    private Order1.Rectangle rectangle7;
+    private Rectangle.Rectangle1 rectangle11;
+    private Rectangle.Rectangle1 rectangle12;
+    private Rectangle.Rectangle1 rectangle13;
+    private Rectangle.Rectangle1 rectangle14;
     private Rectangle.RectangleBorder rectangleBorder1;
+    private Rectangle.RectangleBorder1 rectangleBorder11;
     private Rectangle.RectangleBorder rectangleBorder2;
-    private Order1.RectangleBorder rectangleBorder3;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
 }

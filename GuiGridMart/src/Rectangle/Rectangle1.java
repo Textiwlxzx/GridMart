@@ -1,14 +1,15 @@
-package Order1;
+package Rectangle;
 
+import Order1.*;
 import Rectangle.*;
 import javax.swing.JPanel;
 import java.awt.*;
 
-public class Rectangle extends JPanel{
+public class Rectangle1 extends JPanel{
     
     private int radius = 0;
     
-    public Rectangle(){
+    public Rectangle1(){
         setOpaque(false);
     }
     

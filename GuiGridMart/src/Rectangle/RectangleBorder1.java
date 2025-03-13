@@ -1,15 +1,16 @@
-package Order1;
+package Rectangle;
 
+import Order1.*;
 import Rectangle.*;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.RoundRectangle2D;
 
-public class RectangleBorder extends JPanel {
+public class RectangleBorder1 extends JPanel {
 
     private int radius = 0;
 
-    public RectangleBorder() {
+    public RectangleBorder1() {
         setOpaque(false);
         setBackground(new Color(255, 255, 255));
         setForeground(new Color(54, 54, 54));
