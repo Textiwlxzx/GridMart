@@ -76,7 +76,8 @@ public class Main2 extends javax.swing.JFrame {
         time = new CustomFont.LabelText();
         buttonIcon1 = new button.ButtonIcon();
         button12 = new button.Button1();
-        rectangleBorder4 = new Rectangle.RectangleBorder();
+        scrollPaneWin111 = new Scroll.ScrollPaneWin11();
+        panelTest2 = new Rectangle.PanelTest();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -148,7 +149,7 @@ public class Main2 extends javax.swing.JFrame {
                 .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(407, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         rectangleBorder2.setPreferredSize(new java.awt.Dimension(1337, 99));
@@ -188,7 +189,7 @@ public class Main2 extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
                 .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -215,18 +216,22 @@ public class Main2 extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
-        rectangleBorder4.setRadius(65);
+        scrollPaneWin111.setBorder(null);
 
-        javax.swing.GroupLayout rectangleBorder4Layout = new javax.swing.GroupLayout(rectangleBorder4);
-        rectangleBorder4.setLayout(rectangleBorder4Layout);
-        rectangleBorder4Layout.setHorizontalGroup(
-            rectangleBorder4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelTest2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(54, 54, 54), 1, true));
+
+        javax.swing.GroupLayout panelTest2Layout = new javax.swing.GroupLayout(panelTest2);
+        panelTest2.setLayout(panelTest2Layout);
+        panelTest2Layout.setHorizontalGroup(
+            panelTest2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 975, Short.MAX_VALUE)
         );
-        rectangleBorder4Layout.setVerticalGroup(
-            rectangleBorder4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        panelTest2Layout.setVerticalGroup(
+            panelTest2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 829, Short.MAX_VALUE)
         );
+
+        scrollPaneWin111.setViewportView(panelTest2);
 
         javax.swing.GroupLayout backgrounduser1Layout = new javax.swing.GroupLayout(backgrounduser1);
         backgrounduser1.setLayout(backgrounduser1Layout);
@@ -234,23 +239,23 @@ public class Main2 extends javax.swing.JFrame {
             backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgrounduser1Layout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createSequentialGroup()
+                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(backgrounduser1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(41, 41, 41)
-                        .addComponent(rectangleBorder4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(52, Short.MAX_VALUE))
+                        .addComponent(scrollPaneWin111, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         backgrounduser1Layout.setVerticalGroup(
             backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
+                .addContainerGap(28, Short.MAX_VALUE)
                 .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(rectangleBorder1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(rectangleBorder4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(rectangleBorder1, javax.swing.GroupLayout.DEFAULT_SIZE, 831, Short.MAX_VALUE)
+                    .addComponent(scrollPaneWin111, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(35, 35, 35))
         );
 
@@ -340,9 +345,10 @@ public class Main2 extends javax.swing.JFrame {
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
     private CustomFont.LabelText labelText5;
+    private Rectangle.PanelTest panelTest2;
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder rectangleBorder2;
-    private Rectangle.RectangleBorder rectangleBorder4;
+    private Scroll.ScrollPaneWin11 scrollPaneWin111;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
 }
