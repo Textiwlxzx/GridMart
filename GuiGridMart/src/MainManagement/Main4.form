@@ -95,7 +95,7 @@
                       <Component id="labelText5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="time" min="-2" pref="141" max="-2" attributes="0"/>
-                      <EmptySpace pref="232" max="32767" attributes="0"/>
+                      <EmptySpace pref="267" max="32767" attributes="0"/>
                       <Component id="button12" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
                       <Component id="labelText2" min="-2" max="-2" attributes="0"/>
@@ -200,6 +200,9 @@
             </Property>
             <Property name="radius" type="int" value="55"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonClear5ActionPerformed"/>
+          </Events>
         </Component>
         <Container class="Rectangle.RectangleBorder" name="rectangleBorder1">
           <Properties>
@@ -230,7 +233,7 @@
                               <Component id="labelText6" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="215" max="32767" attributes="0"/>
+                      <EmptySpace pref="224" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -239,7 +242,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="labelText6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="419" max="32767" attributes="0"/>
+                      <EmptySpace pref="417" max="32767" attributes="0"/>
                       <Component id="labelText1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="labelText9" min="-2" max="-2" attributes="0"/>
