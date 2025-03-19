@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.Timer;
-
+import raven.glasspanepopup.GlassPanePopup;
 
 public class Main1 extends javax.swing.JFrame {
 
@@ -16,6 +16,7 @@ public class Main1 extends javax.swing.JFrame {
         initComponents();
         dt();
         times();
+        GlassPanePopup.install(this);
     }
     
     public void dt() {
@@ -76,6 +77,7 @@ public class Main1 extends javax.swing.JFrame {
         labelText5 = new CustomFont.LabelText();
         time = new CustomFont.LabelText();
         buttonIcon1 = new button.ButtonIcon();
+        buttonRaven1 = new button.ButtonRaven();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -193,7 +195,7 @@ public class Main1 extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -220,6 +222,19 @@ public class Main1 extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
+        buttonRaven1.setBackground(new java.awt.Color(139, 122, 175));
+        buttonRaven1.setForeground(new java.awt.Color(255, 255, 255));
+        buttonRaven1.setText("Add");
+        buttonRaven1.setFocusCycleRoot(true);
+        buttonRaven1.setFont(new java.awt.Font("Afacad", 1, 40)); // NOI18N
+        buttonRaven1.setPreferredSize(new java.awt.Dimension(160, 85));
+        buttonRaven1.setRound(25);
+        buttonRaven1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonRaven1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
         background1Layout.setHorizontalGroup(
@@ -232,7 +247,9 @@ public class Main1 extends javax.swing.JFrame {
                         .addContainerGap(52, Short.MAX_VALUE))
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(buttonRaven1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(282, 282, 282))))
         );
         background1Layout.setVerticalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,8 +257,13 @@ public class Main1 extends javax.swing.JFrame {
                 .addContainerGap(35, Short.MAX_VALUE)
                 .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
+                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
+                        .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
+                        .addComponent(buttonRaven1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(176, 176, 176))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -280,6 +302,10 @@ public class Main1 extends javax.swing.JFrame {
     private void buttonClear5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear5ActionPerformed
+
+    private void buttonRaven1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonRaven1ActionPerformed
+        GlassPanePopup.showPopup(new ProductAdd());
+    }//GEN-LAST:event_buttonRaven1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,6 +351,7 @@ public class Main1 extends javax.swing.JFrame {
     private button.ButtonClear buttonClear5;
     private button.ButtonIcon buttonIcon1;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
+    private button.ButtonRaven buttonRaven1;
     private CustomFont.LabelText date;
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
