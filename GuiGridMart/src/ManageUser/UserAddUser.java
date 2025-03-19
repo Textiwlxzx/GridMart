@@ -1,4 +1,4 @@
-package Main;
+package ManageUser;
 
 import raven.glasspanepopup.GlassPanePopup;
 
@@ -47,14 +47,15 @@ public class UserAddUser extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        buttonClear1 = new button.ButtonClear();
-        buttonClear3 = new button.ButtonClear();
-        button12 = new button.Button1();
-        button13 = new button.Button1();
+        Back = new button.Button1();
+        Edit = new button.ButtonClear();
+        User = new CustomFont.LabelText();
+        Iconuser = new javax.swing.JLabel();
+        Add = new button.Button1();
+        History = new button.ButtonClear();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setResizable(false);
 
         rectangle2.setPreferredSize(new java.awt.Dimension(1237, 767));
@@ -261,40 +262,45 @@ public class UserAddUser extends javax.swing.JFrame {
                 .addContainerGap(104, Short.MAX_VALUE))
         );
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        jLabel2.setText("User");
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.png"))); // NOI18N
-
-        buttonClear1.setText("History");
-        buttonClear1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        buttonClear1.setPreferredSize(new java.awt.Dimension(130, 55));
-        buttonClear1.setRadius(50);
-
-        buttonClear3.setText("Edit");
-        buttonClear3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        buttonClear3.setPreferredSize(new java.awt.Dimension(130, 55));
-        buttonClear3.setRadius(50);
-
-        button12.setForeground(new java.awt.Color(0, 0, 0));
-        button12.setText("Back");
-        button12.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        button12.setPreferredSize(new java.awt.Dimension(130, 55));
-        button12.setRadius(50);
-        button12.addActionListener(new java.awt.event.ActionListener() {
+        Back.setForeground(new java.awt.Color(54, 54, 54));
+        Back.setText("Back");
+        Back.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Back.setPreferredSize(new java.awt.Dimension(130, 50));
+        Back.setRadius(50);
+        Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button12ActionPerformed(evt);
+                BackActionPerformed(evt);
             }
         });
 
-        button13.setText("Add");
-        button13.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
-        button13.setPreferredSize(new java.awt.Dimension(130, 55));
-        button13.setRadius(50);
-        button13.addActionListener(new java.awt.event.ActionListener() {
+        Edit.setText("Edit");
+        Edit.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Edit.setPreferredSize(new java.awt.Dimension(130, 50));
+        Edit.setRadius(55);
+        Edit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button13ActionPerformed(evt);
+                EditActionPerformed(evt);
+            }
+        });
+
+        User.setText("User");
+        User.setFont(new java.awt.Font("Afacad", 0, 65)); // NOI18N
+
+        Iconuser.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Iconuser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.png"))); // NOI18N
+
+        Add.setText("Add");
+        Add.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Add.setPreferredSize(new java.awt.Dimension(130, 50));
+        Add.setRadius(50);
+
+        History.setText("History");
+        History.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        History.setPreferredSize(new java.awt.Dimension(130, 50));
+        History.setRadius(55);
+        History.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistoryActionPerformed(evt);
             }
         });
 
@@ -302,47 +308,44 @@ public class UserAddUser extends javax.swing.JFrame {
         backgrounduser1.setLayout(backgrounduser1Layout);
         backgrounduser1Layout.setHorizontalGroup(
             backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgrounduser1Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createSequentialGroup()
                 .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(backgrounduser1Layout.createSequentialGroup()
                         .addContainerGap(102, Short.MAX_VALUE)
                         .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(backgrounduser1Layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
-                        .addComponent(jLabel1)
+                        .addGap(125, 125, 125)
+                        .addComponent(Iconuser, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2)
+                        .addComponent(User, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(History, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(59, 59, 59)
-                        .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(59, 59, 59)
-                        .addComponent(button13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(101, 101, 101))
-            .addGroup(backgrounduser1Layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         backgrounduser1Layout.setVerticalGroup(
             backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgrounduser1Layout.createSequentialGroup()
-                .addContainerGap(51, Short.MAX_VALUE)
-                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel2)
-                        .addGroup(backgrounduser1Layout.createSequentialGroup()
-                            .addGap(13, 13, 13)
-                            .addComponent(jLabel1)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(button13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(51, 51, 51)
+                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(History, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(User, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Iconuser, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48))
+                .addGap(18, 45, Short.MAX_VALUE)
+                .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -360,15 +363,23 @@ public class UserAddUser extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
-        User newFrame = new User();
+    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+        UserMain newFrame = new UserMain();
         newFrame.setVisible(true);
         dispose();
-    }//GEN-LAST:event_button12ActionPerformed
+    }//GEN-LAST:event_BackActionPerformed
 
-    private void button13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button13ActionPerformed
+    private void EditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditActionPerformed
+        UserEdit newFrame = new UserEdit();
+        newFrame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_EditActionPerformed
+
+    private void HistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistoryActionPerformed
+        UserHistory newFrame = new UserHistory();
+        newFrame.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_HistoryActionPerformed
 
     /**
      * @param args the command line arguments
@@ -405,11 +416,13 @@ public class UserAddUser extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private button.Button1 Add;
+    private button.Button1 Back;
+    private button.ButtonClear Edit;
+    private button.ButtonClear History;
+    private javax.swing.JLabel Iconuser;
+    private CustomFont.LabelText User;
     private Background.backgrounduser backgrounduser1;
-    private button.Button1 button12;
-    private button.Button1 button13;
-    private button.ButtonClear buttonClear1;
-    private button.ButtonClear buttonClear3;
     private Avatarimage.ImageAvatar1 imageAvatar12;
     private Avatarimage.ImageAvatar1 imageAvatar13;
     private Avatarimage.ImageAvatar1 imageAvatar14;
@@ -418,7 +431,6 @@ public class UserAddUser extends javax.swing.JFrame {
     private Avatarimage.ImageAvatar1 imageAvatar17;
     private Avatarimage.ImageAvatar1 imageAvatar18;
     private Avatarimage.ImageAvatar1 imageAvatar19;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -428,7 +440,6 @@ public class UserAddUser extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

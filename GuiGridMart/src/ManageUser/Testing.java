@@ -1,4 +1,4 @@
-package Main;
+package ManageUser;
 
 import raven.glasspanepopup.GlassPanePopup;
 
@@ -401,7 +401,7 @@ public class Testing extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.showPopup(new Cash());
+        
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
