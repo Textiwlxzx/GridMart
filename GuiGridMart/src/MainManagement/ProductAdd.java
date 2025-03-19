@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
+
 package MainManagement;
 
+import raven.glasspanepopup.GlassPanePopup;
 /**
  *
  * @author UNS_CT
@@ -37,18 +39,19 @@ public class ProductAdd extends javax.swing.JPanel {
         textFieldNoShadow8 = new textfield.TextFieldNoShadow();
         textFieldNoShadow9 = new textfield.TextFieldNoShadow();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setPreferredSize(new java.awt.Dimension(435, 567));
 
-        jLabel1.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Afacad", 1, 22)); // NOI18N
         jLabel1.setText("Sell");
 
-        jLabel2.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Afacad", 1, 22)); // NOI18N
         jLabel2.setText("Product’s Name");
 
-        jLabel3.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Afacad", 1, 22)); // NOI18N
         jLabel3.setText("Description");
 
-        jLabel4.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Afacad", 1, 22)); // NOI18N
         jLabel4.setText("Cost");
 
         button12.setText("OK");
@@ -87,7 +90,7 @@ public class ProductAdd extends javax.swing.JPanel {
         textFieldNoShadow7.setBackground(new java.awt.Color(217, 217, 217));
         textFieldNoShadow7.setAlignmentX(0.0F);
         textFieldNoShadow7.setAlignmentY(0.0F);
-        textFieldNoShadow7.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+        textFieldNoShadow7.setFont(new java.awt.Font("Afacad", 0, 16)); // NOI18N
         textFieldNoShadow7.setMargin(new java.awt.Insets(0, 6, 0, 6));
         textFieldNoShadow7.setPreferredSize(new java.awt.Dimension(210, 35));
         textFieldNoShadow7.setRound(0);
@@ -128,19 +131,23 @@ public class ProductAdd extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel1))
-                .addGap(10, 10, 10)
+                .addContainerGap(32, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel1))
+                        .addGap(10, 10, 10))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(textFieldNoShadow6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textFieldNoShadow7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textFieldNoShadow8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(textFieldNoShadow9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34))
+                .addGap(32, 32, 32))
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -176,7 +183,8 @@ public class ProductAdd extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
-         this.setVisible(false);
+        this.setVisible(false);
+        GlassPanePopup.showPopup(new popSure());
     }//GEN-LAST:event_button12ActionPerformed
 
     private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
