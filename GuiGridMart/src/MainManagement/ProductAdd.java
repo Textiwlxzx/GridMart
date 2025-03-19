@@ -26,54 +26,18 @@ public class ProductAdd extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        textFieldNoShadow2 = new textfield.TextFieldNoShadow();
-        textFieldNoShadow3 = new textfield.TextFieldNoShadow();
-        textFieldNoShadow4 = new textfield.TextFieldNoShadow();
-        textFieldNoShadow5 = new textfield.TextFieldNoShadow();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         button12 = new button.Button1();
         buttonClear1 = new button.ButtonClear();
+        textFieldNoShadow6 = new textfield.TextFieldNoShadow();
+        textFieldNoShadow7 = new textfield.TextFieldNoShadow();
+        textFieldNoShadow8 = new textfield.TextFieldNoShadow();
+        textFieldNoShadow9 = new textfield.TextFieldNoShadow();
 
         setPreferredSize(new java.awt.Dimension(435, 567));
-
-        textFieldNoShadow2.setBackground(new java.awt.Color(217, 217, 217));
-        textFieldNoShadow2.setPreferredSize(new java.awt.Dimension(210, 35));
-        textFieldNoShadow2.setRound(0);
-        textFieldNoShadow2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldNoShadow2ActionPerformed(evt);
-            }
-        });
-
-        textFieldNoShadow3.setBackground(new java.awt.Color(217, 217, 217));
-        textFieldNoShadow3.setPreferredSize(new java.awt.Dimension(210, 35));
-        textFieldNoShadow3.setRound(0);
-        textFieldNoShadow3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldNoShadow3ActionPerformed(evt);
-            }
-        });
-
-        textFieldNoShadow4.setBackground(new java.awt.Color(217, 217, 217));
-        textFieldNoShadow4.setPreferredSize(new java.awt.Dimension(210, 35));
-        textFieldNoShadow4.setRound(0);
-        textFieldNoShadow4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldNoShadow4ActionPerformed(evt);
-            }
-        });
-
-        textFieldNoShadow5.setBackground(new java.awt.Color(217, 217, 217));
-        textFieldNoShadow5.setPreferredSize(new java.awt.Dimension(210, 35));
-        textFieldNoShadow5.setRound(0);
-        textFieldNoShadow5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textFieldNoShadow5ActionPerformed(evt);
-            }
-        });
 
         jLabel1.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
         jLabel1.setText("Sell");
@@ -90,7 +54,7 @@ public class ProductAdd extends javax.swing.JPanel {
         button12.setText("OK");
         button12.setFont(new java.awt.Font("Afacad", 0, 20)); // NOI18N
         button12.setPreferredSize(new java.awt.Dimension(86, 33));
-        button12.setRadius(30);
+        button12.setRadius(35);
         button12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button12ActionPerformed(evt);
@@ -100,10 +64,62 @@ public class ProductAdd extends javax.swing.JPanel {
         buttonClear1.setText("Delete");
         buttonClear1.setFont(new java.awt.Font("Afacad", 0, 20)); // NOI18N
         buttonClear1.setPreferredSize(new java.awt.Dimension(86, 33));
-        buttonClear1.setRadius(30);
+        buttonClear1.setRadius(35);
         buttonClear1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonClear1ActionPerformed(evt);
+            }
+        });
+
+        textFieldNoShadow6.setBackground(new java.awt.Color(217, 217, 217));
+        textFieldNoShadow6.setAlignmentX(0.0F);
+        textFieldNoShadow6.setAlignmentY(0.0F);
+        textFieldNoShadow6.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+        textFieldNoShadow6.setMargin(new java.awt.Insets(0, 6, 0, 6));
+        textFieldNoShadow6.setPreferredSize(new java.awt.Dimension(210, 35));
+        textFieldNoShadow6.setRound(0);
+        textFieldNoShadow6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldNoShadow6ActionPerformed(evt);
+            }
+        });
+
+        textFieldNoShadow7.setBackground(new java.awt.Color(217, 217, 217));
+        textFieldNoShadow7.setAlignmentX(0.0F);
+        textFieldNoShadow7.setAlignmentY(0.0F);
+        textFieldNoShadow7.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+        textFieldNoShadow7.setMargin(new java.awt.Insets(0, 6, 0, 6));
+        textFieldNoShadow7.setPreferredSize(new java.awt.Dimension(210, 35));
+        textFieldNoShadow7.setRound(0);
+        textFieldNoShadow7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldNoShadow7ActionPerformed(evt);
+            }
+        });
+
+        textFieldNoShadow8.setBackground(new java.awt.Color(217, 217, 217));
+        textFieldNoShadow8.setAlignmentX(0.0F);
+        textFieldNoShadow8.setAlignmentY(0.0F);
+        textFieldNoShadow8.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+        textFieldNoShadow8.setMargin(new java.awt.Insets(0, 6, 0, 6));
+        textFieldNoShadow8.setPreferredSize(new java.awt.Dimension(210, 35));
+        textFieldNoShadow8.setRound(0);
+        textFieldNoShadow8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldNoShadow8ActionPerformed(evt);
+            }
+        });
+
+        textFieldNoShadow9.setBackground(new java.awt.Color(217, 217, 217));
+        textFieldNoShadow9.setAlignmentX(0.0F);
+        textFieldNoShadow9.setAlignmentY(0.0F);
+        textFieldNoShadow9.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+        textFieldNoShadow9.setMargin(new java.awt.Insets(0, 6, 0, 6));
+        textFieldNoShadow9.setPreferredSize(new java.awt.Dimension(210, 35));
+        textFieldNoShadow9.setRound(0);
+        textFieldNoShadow9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textFieldNoShadow9ActionPerformed(evt);
             }
         });
 
@@ -111,87 +127,77 @@ public class ProductAdd extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(19, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel1))
+                .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(9, 9, 9))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(9, 9, 9))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(9, 9, 9))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(textFieldNoShadow5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textFieldNoShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textFieldNoShadow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(textFieldNoShadow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29))
+                    .addComponent(textFieldNoShadow6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldNoShadow7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldNoShadow8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(textFieldNoShadow9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(276, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(textFieldNoShadow3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(textFieldNoShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)))
+                .addContainerGap(244, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(textFieldNoShadow5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(textFieldNoShadow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(40, 40, 40)
+                    .addComponent(jLabel2)
+                    .addComponent(textFieldNoShadow7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(textFieldNoShadow8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(textFieldNoShadow9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(textFieldNoShadow6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20))
+                .addGap(19, 19, 19))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void textFieldNoShadow2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldNoShadow2ActionPerformed
-
-    private void textFieldNoShadow3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldNoShadow3ActionPerformed
-
-    private void textFieldNoShadow4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldNoShadow4ActionPerformed
-
-    private void textFieldNoShadow5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_textFieldNoShadow5ActionPerformed
-
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
-        // TODO add your handling code here:
+         this.setVisible(false);
     }//GEN-LAST:event_button12ActionPerformed
 
     private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear1ActionPerformed
+
+    private void textFieldNoShadow6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldNoShadow6ActionPerformed
+
+    private void textFieldNoShadow7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldNoShadow7ActionPerformed
+
+    private void textFieldNoShadow8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldNoShadow8ActionPerformed
+
+    private void textFieldNoShadow9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textFieldNoShadow9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textFieldNoShadow9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -201,9 +207,9 @@ public class ProductAdd extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private textfield.TextFieldNoShadow textFieldNoShadow2;
-    private textfield.TextFieldNoShadow textFieldNoShadow3;
-    private textfield.TextFieldNoShadow textFieldNoShadow4;
-    private textfield.TextFieldNoShadow textFieldNoShadow5;
+    private textfield.TextFieldNoShadow textFieldNoShadow6;
+    private textfield.TextFieldNoShadow textFieldNoShadow7;
+    private textfield.TextFieldNoShadow textFieldNoShadow8;
+    private textfield.TextFieldNoShadow textFieldNoShadow9;
     // End of variables declaration//GEN-END:variables
 }
