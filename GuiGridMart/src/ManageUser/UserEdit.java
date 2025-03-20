@@ -63,7 +63,6 @@ public class UserEdit extends javax.swing.JFrame {
         History = new button.ButtonClear();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         setResizable(false);
 
         rectangle2.setPreferredSize(new java.awt.Dimension(1237, 767));

@@ -18,7 +18,7 @@ public class UserHistory extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backgrounduser1 = new Background.backgrounduser();
+        UserHistory = new Background.backgrounduser();
         Iconuser = new javax.swing.JLabel();
         Add = new button.ButtonClear();
         Edit = new button.ButtonClear();
@@ -72,11 +72,11 @@ public class UserHistory extends javax.swing.JFrame {
         User.setText("User");
         User.setFont(new java.awt.Font("Afacad", 0, 65)); // NOI18N
 
-        javax.swing.GroupLayout backgrounduser1Layout = new javax.swing.GroupLayout(backgrounduser1);
-        backgrounduser1.setLayout(backgrounduser1Layout);
-        backgrounduser1Layout.setHorizontalGroup(
-            backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createSequentialGroup()
+        javax.swing.GroupLayout UserHistoryLayout = new javax.swing.GroupLayout(UserHistory);
+        UserHistory.setLayout(UserHistoryLayout);
+        UserHistoryLayout.setHorizontalGroup(
+            UserHistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UserHistoryLayout.createSequentialGroup()
                 .addGap(125, 125, 125)
                 .addComponent(Iconuser, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -88,17 +88,17 @@ public class UserHistory extends javax.swing.JFrame {
                 .addGap(59, 59, 59)
                 .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(101, 101, 101))
-            .addGroup(backgrounduser1Layout.createSequentialGroup()
+            .addGroup(UserHistoryLayout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        backgrounduser1Layout.setVerticalGroup(
-            backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgrounduser1Layout.createSequentialGroup()
+        UserHistoryLayout.setVerticalGroup(
+            UserHistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UserHistoryLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(UserHistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(UserHistoryLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(History, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -113,11 +113,11 @@ public class UserHistory extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(backgrounduser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(UserHistory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(backgrounduser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(UserHistory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -166,6 +166,6 @@ public class UserHistory extends javax.swing.JFrame {
     private button.Button1 History;
     private javax.swing.JLabel Iconuser;
     private CustomFont.LabelText User;
-    private Background.backgrounduser backgrounduser1;
+    private Background.backgrounduser UserHistory;
     // End of variables declaration//GEN-END:variables
 }
