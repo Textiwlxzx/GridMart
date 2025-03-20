@@ -43,7 +43,6 @@ public class Main extends javax.swing.JFrame {
         jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1440, 1024));
         setResizable(false);
 
         background2.setPreferredSize(new java.awt.Dimension(1440, 1024));
@@ -51,7 +50,7 @@ public class Main extends javax.swing.JFrame {
         rectangle1.setPreferredSize(new java.awt.Dimension(535, 487));
 
         passwordField1.setText("Password");
-        passwordField1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        passwordField1.setFont(new java.awt.Font("Afacad", 0, 22));
         passwordField1.setPreferredSize(new java.awt.Dimension(408, 79));
         passwordField1.setRound(65);
         passwordField1.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +59,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        textField1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        textField1.setFont(new java.awt.Font("Afacad", 0, 22));
         textField1.setPreferredSize(new java.awt.Dimension(408, 79));
         textField1.setRound(65);
         textField1.addActionListener(new java.awt.event.ActionListener() {
@@ -70,16 +69,16 @@ public class Main extends javax.swing.JFrame {
         });
 
         button1.setBackground(new java.awt.Color(206, 192, 236));
-        button1.setForeground(new java.awt.Color(0, 0, 0));
+        button1.setForeground(new java.awt.Color(36, 36, 36));
         button1.setText("Log in");
-        button1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        button1.setFont(new java.awt.Font("Afacad", 1, 32));
         button1.setPreferredSize(new java.awt.Dimension(408, 79));
         button1.setRound(65);
 
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Afacad", 0, 28));
         jLabel1.setText("Username");
 
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Afacad", 0 , 28));
         jLabel2.setText("Password");
 
         javax.swing.GroupLayout rectangle1Layout = new javax.swing.GroupLayout(rectangle1);
@@ -110,7 +109,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(passwordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(54, 54, 54)
                 .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(56, Short.MAX_VALUE))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
 
         logoIcon1.setPreferredSize(new java.awt.Dimension(414, 427));
