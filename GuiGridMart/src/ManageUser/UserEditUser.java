@@ -21,7 +21,7 @@ public class UserEditUser extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        backgrounduser1 = new Background.backgrounduser();
+        UserEditUser = new Background.backgrounduser();
         rectangle2 = new Rectangle.Rectangle();
         imageAvatar12 = new Avatarimage.ImageAvatar1();
         buttonIcon1 = new button.ButtonIcon();
@@ -384,20 +384,20 @@ public class UserEditUser extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout backgrounduser1Layout = new javax.swing.GroupLayout(backgrounduser1);
-        backgrounduser1.setLayout(backgrounduser1Layout);
-        backgrounduser1Layout.setHorizontalGroup(
-            backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgrounduser1Layout.createSequentialGroup()
+        javax.swing.GroupLayout UserEditUserLayout = new javax.swing.GroupLayout(UserEditUser);
+        UserEditUser.setLayout(UserEditUserLayout);
+        UserEditUserLayout.setHorizontalGroup(
+            UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UserEditUserLayout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addComponent(Back, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgrounduser1Layout.createSequentialGroup()
-                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(backgrounduser1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UserEditUserLayout.createSequentialGroup()
+                .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(UserEditUserLayout.createSequentialGroup()
                         .addContainerGap(102, Short.MAX_VALUE)
                         .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(backgrounduser1Layout.createSequentialGroup()
+                    .addGroup(UserEditUserLayout.createSequentialGroup()
                         .addGap(125, 125, 125)
                         .addComponent(Iconuser, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -410,12 +410,12 @@ public class UserEditUser extends javax.swing.JFrame {
                         .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(101, 101, 101))
         );
-        backgrounduser1Layout.setVerticalGroup(
-            backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgrounduser1Layout.createSequentialGroup()
+        UserEditUserLayout.setVerticalGroup(
+            UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UserEditUserLayout.createSequentialGroup()
                 .addGap(51, 51, 51)
-                .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(backgrounduser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(Edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(History, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -432,11 +432,11 @@ public class UserEditUser extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(backgrounduser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(UserEditUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(backgrounduser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(UserEditUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -557,8 +557,7 @@ public class UserEditUser extends javax.swing.JFrame {
     private button.ButtonClear History;
     private javax.swing.JLabel Iconuser;
     private CustomFont.LabelText User;
-    private Background.backgrounduser backgrounduser1;
-    private button.ButtonClear buttonClear4;
+    private Background.backgrounduser UserEditUser;
     private button.ButtonIcon buttonIcon1;
     private button.ButtonIcon buttonIcon2;
     private button.ButtonIcon buttonIcon3;

@@ -17,6 +17,7 @@ public class Test extends javax.swing.JFrame {
      */
     public Test() {
         initComponents();
+        setTitle("GridMart");
         GlassPanePopup.install(this);
     }
 
@@ -141,10 +142,51 @@ public class Test extends javax.swing.JFrame {
         Iconuser3 = new javax.swing.JLabel();
         Add3 = new button.Button1();
         History3 = new button.ButtonClear();
+        UserEditUser = new Background.backgrounduser();
+        rectangle5 = new Rectangle.Rectangle();
+        imageAvatar36 = new Avatarimage.ImageAvatar1();
+        buttonIcon9 = new button.ButtonIcon();
+        imageAvatar37 = new Avatarimage.ImageAvatar1();
+        buttonIcon10 = new button.ButtonIcon();
+        imageAvatar38 = new Avatarimage.ImageAvatar1();
+        buttonIcon11 = new button.ButtonIcon();
+        imageAvatar39 = new Avatarimage.ImageAvatar1();
+        buttonIcon12 = new button.ButtonIcon();
+        imageAvatar40 = new Avatarimage.ImageAvatar1();
+        buttonIcon13 = new button.ButtonIcon();
+        imageAvatar41 = new Avatarimage.ImageAvatar1();
+        buttonIcon14 = new button.ButtonIcon();
+        imageAvatar42 = new Avatarimage.ImageAvatar1();
+        buttonIcon15 = new button.ButtonIcon();
+        imageAvatar43 = new Avatarimage.ImageAvatar1();
+        buttonIcon16 = new button.ButtonIcon();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        Back4 = new button.Button1();
+        Add4 = new button.ButtonClear();
+        User4 = new CustomFont.LabelText();
+        Iconuser4 = new javax.swing.JLabel();
+        Edit4 = new button.Button1();
+        History4 = new button.ButtonClear();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1440, 1024));
         setResizable(false);
+        setSize(new java.awt.Dimension(0, 0));
 
         MainPanel.setLayout(new java.awt.CardLayout());
 
@@ -1178,6 +1220,370 @@ public class Test extends javax.swing.JFrame {
 
         MainPanel.add(UserAddUser, "card5");
 
+        rectangle5.setPreferredSize(new java.awt.Dimension(1237, 767));
+        rectangle5.setRadius(80);
+
+        imageAvatar36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon9ActionPerformed(evt);
+            }
+        });
+        imageAvatar36.add(buttonIcon9);
+        buttonIcon9.setBounds(12, 6, 150, 160);
+
+        imageAvatar37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon10ActionPerformed(evt);
+            }
+        });
+        imageAvatar37.add(buttonIcon10);
+        buttonIcon10.setBounds(12, 6, 150, 160);
+
+        imageAvatar38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon11ActionPerformed(evt);
+            }
+        });
+        imageAvatar38.add(buttonIcon11);
+        buttonIcon11.setBounds(12, 6, 150, 160);
+
+        imageAvatar39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon12ActionPerformed(evt);
+            }
+        });
+        imageAvatar39.add(buttonIcon12);
+        buttonIcon12.setBounds(12, 6, 150, 160);
+
+        imageAvatar40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon13ActionPerformed(evt);
+            }
+        });
+        imageAvatar40.add(buttonIcon13);
+        buttonIcon13.setBounds(12, 6, 150, 160);
+
+        imageAvatar41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon14ActionPerformed(evt);
+            }
+        });
+        imageAvatar41.add(buttonIcon14);
+        buttonIcon14.setBounds(12, 6, 150, 160);
+
+        imageAvatar42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon15ActionPerformed(evt);
+            }
+        });
+        imageAvatar42.add(buttonIcon15);
+        buttonIcon15.setBounds(12, 6, 150, 160);
+
+        imageAvatar43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User3.png"))); // NOI18N
+
+        buttonIcon16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Edit.png"))); // NOI18N
+        buttonIcon16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon16ActionPerformed(evt);
+            }
+        });
+        imageAvatar43.add(buttonIcon16);
+        buttonIcon16.setBounds(12, 6, 150, 160);
+
+        jLabel51.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setText("Username");
+        jLabel51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel52.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel52.setText("Manager");
+
+        jLabel53.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel53.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel53.setText("Username");
+        jLabel53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel54.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setText("Manager");
+
+        jLabel55.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel55.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel55.setText("Username");
+        jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel56.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel56.setText("Employee");
+
+        jLabel57.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel57.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel57.setText("Username");
+        jLabel57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel58.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel58.setText("Employee");
+
+        jLabel59.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel59.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel59.setText("Username");
+        jLabel59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel60.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel60.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel60.setText("Employee");
+
+        jLabel61.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel61.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel61.setText("Username");
+        jLabel61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel62.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel62.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel62.setText("Employee");
+
+        jLabel63.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel63.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel63.setText("Username");
+        jLabel63.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel64.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel64.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel64.setText("Employee");
+
+        jLabel65.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel65.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel65.setText("Username");
+        jLabel65.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel66.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel66.setText("Employee");
+
+        javax.swing.GroupLayout rectangle5Layout = new javax.swing.GroupLayout(rectangle5);
+        rectangle5.setLayout(rectangle5Layout);
+        rectangle5Layout.setHorizontalGroup(
+            rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle5Layout.createSequentialGroup()
+                .addContainerGap(151, Short.MAX_VALUE)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imageAvatar36, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(91, 91, 91)
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(rectangle5Layout.createSequentialGroup()
+                                .addComponent(imageAvatar39, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(91, 91, 91)
+                                .addComponent(imageAvatar37, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(rectangle5Layout.createSequentialGroup()
+                                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(91, 91, 91)
+                                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel64, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(91, 91, 91)
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imageAvatar38, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(imageAvatar43, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(91, 91, 91)
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(rectangle5Layout.createSequentialGroup()
+                                .addComponent(imageAvatar42, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(91, 91, 91)
+                                .addComponent(imageAvatar40, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(rectangle5Layout.createSequentialGroup()
+                                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(91, 91, 91)
+                                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(91, 91, 91)
+                        .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(imageAvatar41, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(153, 153, 153))
+        );
+        rectangle5Layout.setVerticalGroup(
+            rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(rectangle5Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(imageAvatar39, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar38, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar37, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar36, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel51)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel52))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel53)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel54))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel63)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel64))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel65)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel66)))
+                .addGap(74, 74, 74)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(imageAvatar42, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar41, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar40, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar43, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(rectangle5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel55)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel56))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel57)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel58))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel59)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel60))
+                    .addGroup(rectangle5Layout.createSequentialGroup()
+                        .addComponent(jLabel61)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel62)))
+                .addContainerGap(104, Short.MAX_VALUE))
+        );
+
+        Back4.setForeground(new java.awt.Color(54, 54, 54));
+        Back4.setText("Back");
+        Back4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Back4.setPreferredSize(new java.awt.Dimension(130, 50));
+        Back4.setRadius(50);
+        Back4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Back4ActionPerformed(evt);
+            }
+        });
+
+        Add4.setText("Add");
+        Add4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Add4.setPreferredSize(new java.awt.Dimension(130, 50));
+        Add4.setRadius(55);
+        Add4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Add4ActionPerformed(evt);
+            }
+        });
+
+        User4.setText("User");
+        User4.setFont(new java.awt.Font("Afacad", 0, 65)); // NOI18N
+
+        Iconuser4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Iconuser4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.png"))); // NOI18N
+
+        Edit4.setText("Edit");
+        Edit4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        Edit4.setPreferredSize(new java.awt.Dimension(130, 50));
+        Edit4.setRadius(50);
+
+        History4.setText("History");
+        History4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        History4.setPreferredSize(new java.awt.Dimension(130, 50));
+        History4.setRadius(55);
+        History4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                History4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout UserEditUserLayout = new javax.swing.GroupLayout(UserEditUser);
+        UserEditUser.setLayout(UserEditUserLayout);
+        UserEditUserLayout.setHorizontalGroup(
+            UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UserEditUserLayout.createSequentialGroup()
+                .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(UserEditUserLayout.createSequentialGroup()
+                        .addContainerGap(102, Short.MAX_VALUE)
+                        .addComponent(rectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(UserEditUserLayout.createSequentialGroup()
+                        .addGap(125, 125, 125)
+                        .addComponent(Iconuser4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(User4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(History4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(Edit4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(Add4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(101, 101, 101))
+            .addGroup(UserEditUserLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(Back4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        UserEditUserLayout.setVerticalGroup(
+            UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UserEditUserLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(UserEditUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(Edit4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(History4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Add4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(User4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Iconuser4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addComponent(rectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(Back4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
+        );
+
+        MainPanel.add(UserEditUser, "card6");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1204,7 +1610,7 @@ public class Test extends javax.swing.JFrame {
         MainPanel.removeAll();
         MainPanel.add(UserAddUser);
         MainPanel.repaint();
-        GlassPanePopup.showPopup(new ManageUser.AddUser());
+        GlassPanePopup.showPopup(new AddUser());
         MainPanel.revalidate();
     }//GEN-LAST:event_AddActionPerformed
 
@@ -1216,35 +1622,67 @@ public class Test extends javax.swing.JFrame {
     }//GEN-LAST:event_HistoryActionPerformed
 
     private void buttonIcon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon1ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon1ActionPerformed
 
     private void buttonIcon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon2ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon2ActionPerformed
 
     private void buttonIcon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon3ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon3ActionPerformed
 
     private void buttonIcon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon4ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon4ActionPerformed
 
     private void buttonIcon5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon5ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon5ActionPerformed
 
     private void buttonIcon6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon6ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon6ActionPerformed
 
     private void buttonIcon7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon7ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon7ActionPerformed
 
     private void buttonIcon8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon8ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
     }//GEN-LAST:event_buttonIcon8ActionPerformed
 
     private void Back1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back1ActionPerformed
@@ -1258,7 +1696,7 @@ public class Test extends javax.swing.JFrame {
         MainPanel.removeAll();
         MainPanel.add(UserAddUser);
         MainPanel.repaint();
-        GlassPanePopup.showPopup(new ManageUser.AddUser());
+        GlassPanePopup.showPopup(new AddUser());
         MainPanel.revalidate();
     }//GEN-LAST:event_Add1ActionPerformed
 
@@ -1273,7 +1711,7 @@ public class Test extends javax.swing.JFrame {
         MainPanel.removeAll();
         MainPanel.add(UserAddUser);
         MainPanel.repaint();
-        GlassPanePopup.showPopup(new ManageUser.AddUser());
+        GlassPanePopup.showPopup(new AddUser());
         MainPanel.revalidate();
     }//GEN-LAST:event_Add2ActionPerformed
 
@@ -1299,12 +1737,104 @@ public class Test extends javax.swing.JFrame {
     }//GEN-LAST:event_Back3ActionPerformed
 
     private void Edit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Edit3ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserEdit);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_Edit3ActionPerformed
 
     private void History3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_History3ActionPerformed
-
+        MainPanel.removeAll();
+        MainPanel.add(UserHistory);
+        MainPanel.repaint();
+        MainPanel.revalidate();
     }//GEN-LAST:event_History3ActionPerformed
+
+    private void buttonIcon9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon9ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon9ActionPerformed
+
+    private void buttonIcon10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon10ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon10ActionPerformed
+
+    private void buttonIcon11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon11ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon11ActionPerformed
+
+    private void buttonIcon12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon12ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon12ActionPerformed
+
+    private void buttonIcon13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon13ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon13ActionPerformed
+
+    private void buttonIcon14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon14ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon14ActionPerformed
+
+    private void buttonIcon15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon15ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon15ActionPerformed
+
+    private void buttonIcon16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon16ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserEditUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new EditUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_buttonIcon16ActionPerformed
+
+    private void Back4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Back4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserMain);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_Back4ActionPerformed
+
+    private void Add4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Add4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserAddUser);
+        MainPanel.repaint();
+        GlassPanePopup.showPopup(new AddUser());
+        MainPanel.revalidate();
+    }//GEN-LAST:event_Add4ActionPerformed
+
+    private void History4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_History4ActionPerformed
+        MainPanel.removeAll();
+        MainPanel.add(UserHistory);
+        MainPanel.repaint();
+        MainPanel.revalidate();
+    }//GEN-LAST:event_History4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1346,32 +1876,46 @@ public class Test extends javax.swing.JFrame {
     private button.ButtonClear Add1;
     private button.ButtonClear Add2;
     private button.Button1 Add3;
+    private button.ButtonClear Add4;
     private button.Button1 Back;
     private button.Button1 Back1;
     private button.Button1 Back2;
     private button.Button1 Back3;
+    private button.Button1 Back4;
     private button.ButtonClear Edit;
     private button.Button1 Edit1;
     private button.ButtonClear Edit2;
     private button.ButtonClear Edit3;
+    private button.Button1 Edit4;
     private button.ButtonClear History;
     private button.ButtonClear History1;
     private button.Button1 History2;
     private button.ButtonClear History3;
+    private button.ButtonClear History4;
     private javax.swing.JLabel Iconuser;
     private javax.swing.JLabel Iconuser1;
     private javax.swing.JLabel Iconuser2;
     private javax.swing.JLabel Iconuser3;
+    private javax.swing.JLabel Iconuser4;
     private javax.swing.JPanel MainPanel;
     private CustomFont.LabelText User;
     private CustomFont.LabelText User1;
     private CustomFont.LabelText User2;
     private CustomFont.LabelText User3;
+    private CustomFont.LabelText User4;
     private Background.backgrounduser UserAddUser;
     private Background.backgrounduser UserEdit;
+    private Background.backgrounduser UserEditUser;
     private Background.backgrounduser UserHistory;
     private Background.backgrounduser UserMain;
     private button.ButtonIcon buttonIcon1;
+    private button.ButtonIcon buttonIcon10;
+    private button.ButtonIcon buttonIcon11;
+    private button.ButtonIcon buttonIcon12;
+    private button.ButtonIcon buttonIcon13;
+    private button.ButtonIcon buttonIcon14;
+    private button.ButtonIcon buttonIcon15;
+    private button.ButtonIcon buttonIcon16;
     private button.ButtonIcon buttonIcon2;
     private button.ButtonIcon buttonIcon3;
     private button.ButtonIcon buttonIcon4;
@@ -1379,6 +1923,7 @@ public class Test extends javax.swing.JFrame {
     private button.ButtonIcon buttonIcon6;
     private button.ButtonIcon buttonIcon7;
     private button.ButtonIcon buttonIcon8;
+    private button.ButtonIcon buttonIcon9;
     private Avatarimage.ImageAvatar1 imageAvatar12;
     private Avatarimage.ImageAvatar1 imageAvatar13;
     private Avatarimage.ImageAvatar1 imageAvatar14;
@@ -1403,6 +1948,14 @@ public class Test extends javax.swing.JFrame {
     private Avatarimage.ImageAvatar1 imageAvatar33;
     private Avatarimage.ImageAvatar1 imageAvatar34;
     private Avatarimage.ImageAvatar1 imageAvatar35;
+    private Avatarimage.ImageAvatar1 imageAvatar36;
+    private Avatarimage.ImageAvatar1 imageAvatar37;
+    private Avatarimage.ImageAvatar1 imageAvatar38;
+    private Avatarimage.ImageAvatar1 imageAvatar39;
+    private Avatarimage.ImageAvatar1 imageAvatar40;
+    private Avatarimage.ImageAvatar1 imageAvatar41;
+    private Avatarimage.ImageAvatar1 imageAvatar42;
+    private Avatarimage.ImageAvatar1 imageAvatar43;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -1447,12 +2000,29 @@ public class Test extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private Rectangle.Rectangle rectangle2;
     private Rectangle.Rectangle rectangle3;
     private Rectangle.Rectangle rectangle4;
+    private Rectangle.Rectangle rectangle5;
     // End of variables declaration//GEN-END:variables
 }
