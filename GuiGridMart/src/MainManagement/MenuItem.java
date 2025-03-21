@@ -168,7 +168,7 @@ public class MenuItem extends javax.swing.JPanel {
     
     private void handleButtonClick(ButtonNoFillNoStroke b) {
         if (current == b) {
-            b.setFont(new Font("Afacad", Font.BOLD, 24));
+            b.setFont(new Font("Afacad", Font.PLAIN, 24));
             current = null;
         }
         else {
