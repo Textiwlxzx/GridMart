@@ -5,8 +5,6 @@ import java.awt.*;
 
 public class ButtonNoFillNoStroke extends JButton{
     
-    private int radius = 0;
-    
     public ButtonNoFillNoStroke(){
         setOpaque(false);
         setContentAreaFilled(false);

@@ -22,6 +22,7 @@ public class Button1 extends JButton {
 
     public void setRadius(int radius) {
         this.radius = radius;
+        repaint();
     }
 
     @Override
