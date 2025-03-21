@@ -78,9 +78,21 @@ public class Main extends javax.swing.JFrame {
         time = new CustomFont.LabelText();
         buttonIcon1 = new button.ButtonIcon();
         rectangle11 = new Rectangle.Rectangle1();
+        labelText7 = new CustomFont.LabelText();
+        labelText8 = new CustomFont.LabelText();
+        labelText9 = new CustomFont.LabelText();
         rectangle12 = new Rectangle.Rectangle1();
+        labelText1 = new CustomFont.LabelText();
+        labelText4 = new CustomFont.LabelText();
+        labelText6 = new CustomFont.LabelText();
         rectangle13 = new Rectangle.Rectangle1();
+        labelText10 = new CustomFont.LabelText();
+        labelText12 = new CustomFont.LabelText();
+        labelText14 = new CustomFont.LabelText();
         rectangle14 = new Rectangle.Rectangle1();
+        labelText11 = new CustomFont.LabelText();
+        labelText13 = new CustomFont.LabelText();
+        labelText15 = new CustomFont.LabelText();
         rectangleBorder11 = new Rectangle.RectangleBorder1();
         jLabel1 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
@@ -236,57 +248,153 @@ public class Main extends javax.swing.JFrame {
         rectangle11.setPreferredSize(new java.awt.Dimension(287, 288));
         rectangle11.setRadius(35);
 
+        labelText7.setText("Product's Name");
+
+        labelText8.setText("description");
+        labelText8.setFont(new java.awt.Font("Afacad", 0, 14)); // NOI18N
+
+        labelText9.setText("lefts");
+        labelText9.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout rectangle11Layout = new javax.swing.GroupLayout(rectangle11);
         rectangle11.setLayout(rectangle11Layout);
         rectangle11Layout.setHorizontalGroup(
             rectangle11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
+            .addGroup(rectangle11Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(rectangle11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelText8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(111, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle11Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(labelText9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
         );
         rectangle11Layout.setVerticalGroup(
             rectangle11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle11Layout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addComponent(labelText7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(labelText8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(labelText9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
 
         rectangle12.setPreferredSize(new java.awt.Dimension(287, 288));
         rectangle12.setRadius(35);
 
+        labelText1.setText("Product's Name");
+
+        labelText4.setText("lefts");
+        labelText4.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+
+        labelText6.setText("description");
+        labelText6.setFont(new java.awt.Font("Afacad", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout rectangle12Layout = new javax.swing.GroupLayout(rectangle12);
         rectangle12.setLayout(rectangle12Layout);
         rectangle12Layout.setHorizontalGroup(
             rectangle12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
+            .addGroup(rectangle12Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(rectangle12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(111, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle12Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(labelText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
         );
         rectangle12Layout.setVerticalGroup(
             rectangle12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle12Layout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addComponent(labelText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(labelText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
 
         rectangle13.setPreferredSize(new java.awt.Dimension(287, 288));
         rectangle13.setRadius(35);
 
+        labelText10.setText("Product's Name");
+
+        labelText12.setText("description");
+        labelText12.setFont(new java.awt.Font("Afacad", 0, 14)); // NOI18N
+
+        labelText14.setText("lefts");
+        labelText14.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout rectangle13Layout = new javax.swing.GroupLayout(rectangle13);
         rectangle13.setLayout(rectangle13Layout);
         rectangle13Layout.setHorizontalGroup(
             rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle13Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelText14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
+            .addGroup(rectangle13Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelText12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         rectangle13Layout.setVerticalGroup(
             rectangle13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle13Layout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addComponent(labelText10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelText12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
+                .addComponent(labelText14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
 
         rectangle14.setPreferredSize(new java.awt.Dimension(287, 288));
         rectangle14.setRadius(35);
 
+        labelText11.setText("Product's Name");
+
+        labelText13.setText("description");
+        labelText13.setFont(new java.awt.Font("Afacad", 0, 14)); // NOI18N
+
+        labelText15.setText("lefts");
+        labelText15.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
+
         javax.swing.GroupLayout rectangle14Layout = new javax.swing.GroupLayout(rectangle14);
         rectangle14.setLayout(rectangle14Layout);
         rectangle14Layout.setHorizontalGroup(
             rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
+            .addGroup(rectangle14Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelText13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(111, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle14Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(labelText15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34))
         );
         rectangle14Layout.setVerticalGroup(
             rectangle14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 288, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle14Layout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addComponent(labelText11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(9, 9, 9)
+                .addComponent(labelText13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(labelText15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
 
         rectangleBorder11.setPreferredSize(new java.awt.Dimension(327, 801));
@@ -508,9 +616,21 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
+    private CustomFont.LabelText labelText1;
+    private CustomFont.LabelText labelText10;
+    private CustomFont.LabelText labelText11;
+    private CustomFont.LabelText labelText12;
+    private CustomFont.LabelText labelText13;
+    private CustomFont.LabelText labelText14;
+    private CustomFont.LabelText labelText15;
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
+    private CustomFont.LabelText labelText4;
     private CustomFont.LabelText labelText5;
+    private CustomFont.LabelText labelText6;
+    private CustomFont.LabelText labelText7;
+    private CustomFont.LabelText labelText8;
+    private CustomFont.LabelText labelText9;
     private Rectangle.Rectangle1 rectangle11;
     private Rectangle.Rectangle1 rectangle12;
     private Rectangle.Rectangle1 rectangle13;
