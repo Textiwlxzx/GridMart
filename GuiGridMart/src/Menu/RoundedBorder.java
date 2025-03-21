@@ -14,7 +14,7 @@ public class RoundedBorder extends AbstractBorder {
     @Override
     public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
         // วาดกรอบโค้ง
-        g.setColor(new Color(54, 54, 54));  // สามารถเปลี่ยนสีกรอบได้ที่นี่
+        g.setColor(new Color(206, 192, 236));  // สามารถเปลี่ยนสีกรอบได้ที่นี่
         g.drawRoundRect(x, y, width - 1, height - 1, radius, radius); // วาดกรอบโค้ง
     }
 
