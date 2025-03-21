@@ -1,6 +1,9 @@
 package login;
 
 import MainManagement.Main1;
+import java.awt.Cursor;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
 
@@ -60,6 +63,11 @@ public class Login extends javax.swing.JFrame {
         b_login.setFont(new java.awt.Font("Afacad", 1, 32)); // NOI18N
         b_login.setPreferredSize(new java.awt.Dimension(407, 78));
         b_login.setRadius(70);
+        b_login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                b_loginMouseEntered(evt);
+            }
+        });
         b_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 b_loginActionPerformed(evt);
@@ -180,12 +188,15 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void b_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_loginActionPerformed
-        
+
         String username = t_user.getText();
         char[] passwordd = t_pass.getPassword();
         if (username.equals(correctUsername) && new String(passwordd).equals(correctPassword)) {
             Main1 fr = new Main1();
             fr.setVisible(true);
+        }
+        else {
+            showAlertMessage(this);
         }
     }//GEN-LAST:event_b_loginActionPerformed
 
@@ -193,6 +204,15 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_t_passActionPerformed
 
+    private void b_loginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_loginMouseEntered
+        b_login.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+    }//GEN-LAST:event_b_loginMouseEntered
+
+    private static void showAlertMessage(JFrame fr) {
+        JOptionPane.showMessageDialog(fr, "Incorrect", "Username or Password", JOptionPane.ERROR_MESSAGE);
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
