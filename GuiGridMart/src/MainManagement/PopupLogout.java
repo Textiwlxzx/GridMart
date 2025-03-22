@@ -5,6 +5,7 @@
 package MainManagement;
 
 import java.awt.Cursor;
+import login.Login;
 import raven.glasspanepopup.GlassPanePopup;
 
 /**
@@ -110,7 +111,8 @@ public class PopupLogout extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void b_yesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_yesActionPerformed
-        // TODO add your handling code here:
+        Login fr_login = new Login();
+        fr_login.setVisible(true);
     }//GEN-LAST:event_b_yesActionPerformed
 
     private void b_noActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_noActionPerformed
