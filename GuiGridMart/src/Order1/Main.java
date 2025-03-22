@@ -15,6 +15,7 @@ public class Main extends javax.swing.JFrame {
 
     
     public Main() {
+        GlassPanePopup.install(this);
         initComponents();
         dt();
         times();
@@ -562,7 +563,10 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        // TODO add your handling code here:
+        Cash newFrame = new Cash();
+        newFrame.setVisible(true);
+        GlassPanePopup.showPopup(new Cash());
+        dispose();
     }//GEN-LAST:event_button11ActionPerformed
 
     /**
