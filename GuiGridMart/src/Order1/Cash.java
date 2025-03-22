@@ -5,6 +5,7 @@
 package Order1;
 
 import Order2.*;
+import raven.glasspanepopup.GlassPanePopup;
 
 /**
  *
@@ -129,7 +130,7 @@ public class Cash extends javax.swing.JPanel {
     }//GEN-LAST:event_textField2ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        // TODO add your handling code here:
+        GlassPanePopup.closePopupLast();
     }//GEN-LAST:event_button11ActionPerformed
 
 
