@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package MainManagement;
+package expired;
+
+import raven.glasspanepopup.GlassPanePopup;
 
 
 /**
@@ -91,7 +93,7 @@ public class popSure extends javax.swing.JPanel {
     }//GEN-LAST:event_button11ActionPerformed
 
     private void buttonNoFillNoStroke1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNoFillNoStroke1ActionPerformed
-        // TODO add your handling code here:
+        GlassPanePopup.closePopupLast();
     }//GEN-LAST:event_buttonNoFillNoStroke1ActionPerformed
 
 
