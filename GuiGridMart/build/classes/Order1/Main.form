@@ -65,10 +65,7 @@
                                   <Component id="rectangle11" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="rectangleProduct1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rectangle13" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="rectangle13" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="rectangle14" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -100,8 +97,6 @@
                               <Component id="rectangle13" min="-2" max="-2" attributes="0"/>
                               <Component id="rectangle14" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                          <Component id="rectangleProduct1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="rectangleBorder11" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -673,21 +668,6 @@
             <Component class="Order1.mwa1" name="mwa12">
             </Component>
           </SubComponents>
-        </Container>
-        <Container class="Rectangle.RectangleProduct" name="rectangleProduct1">
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
         </Container>
       </SubComponents>
     </Container>

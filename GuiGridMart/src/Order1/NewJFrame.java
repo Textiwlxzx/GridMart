@@ -1,58 +1,24 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package Order1;
 
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
+/**
+ *
+ * @author ADMIN
+ */
+public class NewJFrame extends javax.swing.JFrame {
 
-public class Main extends javax.swing.JFrame {
-
-    
-    public Main() {
-        GlassPanePopup.install(this);
+    /**
+     * Creates new form NewJFrame
+     */
+    public NewJFrame() {
         initComponents();
-        dt();
-        times();
+        GlassPanePopup.install(this);
     }
-
-    public void dt() {
-        
-        Date d = new Date();
-    
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    
-        String dd = sdf.format(d);
-        date.setText(dd);
-    }
-
-    Timer t;
-    SimpleDateFormat st;
-
-    public void times() {
-    
-        t = new Timer(0, new ActionListener() {
-        
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            
-            
-                Date dt = new Date();
-                st = new SimpleDateFormat("hh:mm:ss a");
-            
-                String tt = st.format(dt);
-                time.setText(tt);
-        
-            }
-        }); {
-    
-        t.start(); 
-    }
-}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -63,7 +29,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
+        MainPanel = new javax.swing.JPanel();
         background1 = new Background.background();
         rectangleBorder1 = new Rectangle.RectangleBorder();
         buttonClear2 = new button.ButtonClear();
@@ -104,6 +70,8 @@ public class Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+
+        MainPanel.setLayout(new java.awt.CardLayout());
 
         background1.setPreferredSize(new java.awt.Dimension(1440, 1024));
 
@@ -497,30 +465,30 @@ public class Main extends javax.swing.JFrame {
                 .addGap(35, 35, 35))
         );
 
+        MainPanel.add(background1, "card2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(background1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonClear1ActionPerformed
-
     private void buttonClear2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear2ActionPerformed
+
+    private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonClear1ActionPerformed
 
     private void buttonClear3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear3ActionPerformed
         // TODO add your handling code here:
@@ -535,7 +503,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonClear5ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.showPopup(new Cash());dispose();
+        GlassPanePopup.showPopup(new Cash());
     }//GEN-LAST:event_button11ActionPerformed
 
     /**
@@ -555,26 +523,26 @@ public class Main extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main().setVisible(true);
+                new NewJFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel MainPanel;
     private Background.background background1;
     private button.Button1 button11;
     private button.ButtonClear buttonClear1;
@@ -582,7 +550,6 @@ public class Main extends javax.swing.JFrame {
     private button.ButtonClear buttonClear3;
     private button.ButtonClear buttonClear4;
     private button.ButtonClear buttonClear5;
-    private javax.swing.ButtonGroup buttonGroup1;
     private button.ButtonIcon buttonIcon1;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
     private CustomFont.LabelText date;
