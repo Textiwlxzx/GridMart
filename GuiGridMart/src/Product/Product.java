@@ -1,6 +1,7 @@
 
-package MainManagement;
+package Product;
 
+import MainManagement.*;
 import button.ButtonClear;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -13,10 +14,10 @@ import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
 
-public class Main1 extends javax.swing.JFrame {
+public class Product extends javax.swing.JFrame {
 
     
-    public Main1() {
+    public Product() {
         initComponents();
         dt();
         times();
@@ -71,7 +72,7 @@ public class Main1 extends javax.swing.JFrame {
         b_order = new button.ButtonClear();
         b_expired = new button.ButtonClear();
         b_purchased = new button.ButtonClear();
-        b_product = new button.ButtonClear();
+        button11 = new button.Button1();
         rectangleBorder2 = new Rectangle.RectangleBorder();
         b_total = new button.ButtonClear();
         l_name = new CustomFont.LabelText();
@@ -129,18 +130,10 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        b_product.setText("Product");
-        b_product.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
-        b_product.setPreferredSize(new java.awt.Dimension(278, 60));
-        b_product.setRadius(55);
-        b_product.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                b_productMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                b_productMouseEntered(evt);
-            }
-        });
+        button11.setText("Product");
+        button11.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        button11.setPreferredSize(new java.awt.Dimension(278, 60));
+        button11.setRadius(55);
 
         javax.swing.GroupLayout con1Layout = new javax.swing.GroupLayout(con1);
         con1.setLayout(con1Layout);
@@ -149,7 +142,7 @@ public class Main1 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, con1Layout.createSequentialGroup()
                 .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(con1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(b_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_purchased, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_expired, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_order, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -159,7 +152,7 @@ public class Main1 extends javax.swing.JFrame {
             con1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(con1Layout.createSequentialGroup()
                 .addGap(84, 84, 84)
-                .addComponent(b_product, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(b_order, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
@@ -294,11 +287,6 @@ public class Main1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
         
     
-    private void b_productMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_productMouseClicked
-        //handleButtonClick2(b_product);
-        
-    }//GEN-LAST:event_b_productMouseClicked
-
     private void b_orderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_orderMouseClicked
         //handleButtonClick(b_order);
     }//GEN-LAST:event_b_orderMouseClicked
@@ -314,10 +302,6 @@ public class Main1 extends javax.swing.JFrame {
     private void b_totalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_totalMouseClicked
         //handleButtonClick(b_total);
     }//GEN-LAST:event_b_totalMouseClicked
-
-    private void b_productMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_productMouseEntered
-        b_product.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-    }//GEN-LAST:event_b_productMouseEntered
 
     private void b_orderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_orderMouseEntered
         b_order.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
@@ -434,20 +418,21 @@ public class Main1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Product.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main1().setVisible(true);
+                new Product().setVisible(true);
             }
         });
     }
@@ -456,11 +441,11 @@ public class Main1 extends javax.swing.JFrame {
     private button.ButtonClear b_expired;
     private button.ButtonNoFillNoStroke b_logout;
     private button.ButtonClear b_order;
-    private button.ButtonClear b_product;
     private button.ButtonClear b_purchased;
     private button.ButtonIcon b_setting;
     private button.ButtonClear b_total;
     private Background.background background1;
+    private button.Button1 button11;
     private Rectangle.RectangleBorder con1;
     private CustomFont.LabelText date;
     private CustomFont.LabelText l_name;

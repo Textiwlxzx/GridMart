@@ -84,7 +84,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="22" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="b_product" min="-2" max="-2" attributes="0"/>
+                          <Component id="button11" min="-2" max="-2" attributes="0"/>
                           <Component id="b_purchased" min="-2" max="-2" attributes="0"/>
                           <Component id="b_expired" min="-2" max="-2" attributes="0"/>
                           <Component id="b_order" min="-2" max="-2" attributes="0"/>
@@ -97,7 +97,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                      <Component id="b_product" min="-2" max="-2" attributes="0"/>
+                      <Component id="button11" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="b_order" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
@@ -158,7 +158,7 @@
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="b_purchasedMouseEntered"/>
               </Events>
             </Component>
-            <Component class="button.ButtonClear" name="b_product">
+            <Component class="button.Button1" name="button11">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Product"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -169,10 +169,6 @@
                 </Property>
                 <Property name="radius" type="int" value="55"/>
               </Properties>
-              <Events>
-                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="b_productMouseClicked"/>
-                <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="b_productMouseEntered"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>
