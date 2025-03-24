@@ -98,11 +98,11 @@ public class Main extends javax.swing.JFrame {
         labelText15 = new CustomFont.LabelText();
         rectangleBorder11 = new Rectangle.RectangleBorder1();
         jLabel1 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         button11 = new button.Button1();
+        mwa12 = new Order1.mwa1();
+        rectangleProduct1 = new Rectangle.RectangleProduct();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -405,22 +405,6 @@ public class Main extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Order");
 
-        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton1.setText("Cash");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-
-        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jRadioButton2.setText("QR Code");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
-            }
-        });
-
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setText("Total");
 
@@ -441,19 +425,18 @@ public class Main extends javax.swing.JFrame {
         rectangleBorder11.setLayout(rectangleBorder11Layout);
         rectangleBorder11Layout.setHorizontalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rectangleBorder11Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jRadioButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(27, 27, 27))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder11Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel1)
                 .addGap(122, 122, 122))
+            .addGroup(rectangleBorder11Layout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3)
+                    .addComponent(mwa12, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         rectangleBorder11Layout.setVerticalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -464,13 +447,22 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(19, 19, 19)
                 .addComponent(jLabel3)
-                .addGap(17, 17, 17)
-                .addComponent(jRadioButton1)
-                .addGap(22, 22, 22)
-                .addComponent(jRadioButton2)
-                .addGap(39, 39, 39)
+                .addGap(18, 18, 18)
+                .addComponent(mwa12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25))
+        );
+
+        javax.swing.GroupLayout rectangleProduct1Layout = new javax.swing.GroupLayout(rectangleProduct1);
+        rectangleProduct1.setLayout(rectangleProduct1Layout);
+        rectangleProduct1Layout.setHorizontalGroup(
+            rectangleProduct1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        rectangleProduct1Layout.setVerticalGroup(
+            rectangleProduct1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
@@ -490,7 +482,9 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(39, 39, 39)
                                 .addComponent(rectangle11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(background1Layout.createSequentialGroup()
-                                .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(rectangleProduct1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(68, 68, 68)
@@ -513,7 +507,9 @@ public class Main extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(47, 47, 47)
+                        .addComponent(rectangleProduct1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35))
         );
@@ -561,14 +557,6 @@ public class Main extends javax.swing.JFrame {
         GlassPanePopup.showPopup(new Cash());
         dispose();
     }//GEN-LAST:event_button11ActionPerformed
-
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
-
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -621,8 +609,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private CustomFont.LabelText labelText1;
     private CustomFont.LabelText labelText10;
     private CustomFont.LabelText labelText11;
@@ -638,6 +624,7 @@ public class Main extends javax.swing.JFrame {
     private CustomFont.LabelText labelText7;
     private CustomFont.LabelText labelText8;
     private CustomFont.LabelText labelText9;
+    private Order1.mwa1 mwa12;
     private Rectangle.Rectangle1 rectangle11;
     private Rectangle.Rectangle1 rectangle12;
     private Rectangle.Rectangle1 rectangle13;
@@ -645,6 +632,7 @@ public class Main extends javax.swing.JFrame {
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder1 rectangleBorder11;
     private Rectangle.RectangleBorder rectangleBorder2;
+    private Rectangle.RectangleProduct rectangleProduct1;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
 }
