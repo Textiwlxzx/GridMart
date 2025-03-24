@@ -82,6 +82,8 @@ public class main1 extends javax.swing.JFrame {
         label2 = new java.awt.Label();
         label1 = new java.awt.Label();
         label4 = new java.awt.Label();
+        buttonIcon2 = new button.ButtonIcon();
+        buttonIcon3 = new button.ButtonIcon();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -199,7 +201,7 @@ public class main1 extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 206, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -257,6 +259,10 @@ public class main1 extends javax.swing.JFrame {
         label4.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         label4.setText("left");
 
+        buttonIcon2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Predator\\Downloads\\image 1.png")); // NOI18N
+
+        buttonIcon3.setText("buttonIcon3");
+
         javax.swing.GroupLayout rectangle2Layout = new javax.swing.GroupLayout(rectangle2);
         rectangle2.setLayout(rectangle2Layout);
         rectangle2Layout.setHorizontalGroup(
@@ -272,11 +278,21 @@ public class main1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(buttonIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(buttonIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         rectangle2Layout.setVerticalGroup(
             rectangle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangle2Layout.createSequentialGroup()
-                .addContainerGap(79, Short.MAX_VALUE)
+                .addContainerGap()
+                .addGroup(rectangle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(buttonIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(rectangle2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(rectangle2Layout.createSequentialGroup()
@@ -285,8 +301,6 @@ public class main1 extends javax.swing.JFrame {
                         .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(30, 30, 30))
         );
-
-        label4.getAccessibleContext().setAccessibleName("left");
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
@@ -411,6 +425,8 @@ public class main1 extends javax.swing.JFrame {
     private button.ButtonClear buttonClear4;
     private button.ButtonClear buttonClear5;
     private button.ButtonIcon buttonIcon1;
+    private button.ButtonIcon buttonIcon2;
+    private button.ButtonIcon buttonIcon3;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
     private CustomFont.LabelText date;
     private java.awt.Label label1;
