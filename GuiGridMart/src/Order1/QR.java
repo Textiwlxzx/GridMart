@@ -4,6 +4,7 @@
  */
 package Order1;
 
+import javax.swing.SwingUtilities;
 import raven.glasspanepopup.GlassPanePopup;
 
 /**
@@ -69,7 +70,11 @@ public class QR extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.closePopupLast();
+    GlassPanePopup.closePopupLast();
+    Receipt mainFrame = new Receipt(); 
+    mainFrame.setVisible(true);
+
+    SwingUtilities.getWindowAncestor(this).dispose();
     }//GEN-LAST:event_button11ActionPerformed
 
 

@@ -11,13 +11,13 @@ import raven.glasspanepopup.GlassPanePopup;
 
 
 public class Main extends javax.swing.JFrame {
-
-    
+private mwa1 payment;
     public Main() {
         GlassPanePopup.install(this);
         initComponents();
         dt();
         times();
+        payment = new mwa1();
     }
 
     public void dt() {
@@ -534,7 +534,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonClear5ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.showPopup(new Cash());
+         if (payment.CashSelected()) {
+                GlassPanePopup.showPopup(new Cash());
+        } else if (payment.QRSelected()) {
+                GlassPanePopup.showPopup(new QR());
+            }
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed

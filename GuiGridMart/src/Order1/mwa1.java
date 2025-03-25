@@ -26,5 +26,10 @@ public class mwa1 extends JPanel {
         add(b1);
         add(b2);
     }
-  
+  public boolean CashSelected() {
+        return b1.isSelected();
+    }
+  public boolean QRSelected() {
+        return b2.isSelected();
+    }
 }
