@@ -8,9 +8,9 @@ import java.util.Date;
 import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
-public class main1 extends javax.swing.JFrame {
+public class Main1 extends javax.swing.JFrame {
 
-    public main1() {
+    public Main1() {
         initComponents();
         dt();
         times();
@@ -108,6 +108,7 @@ public class main1 extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         buttonIcon5 = new button.ButtonIcon();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -337,6 +338,7 @@ public class main1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        rectangle3.setFont(new java.awt.Font("Afacad", 0, 12)); // NOI18N
         rectangle3.setPreferredSize(new java.awt.Dimension(434, 179));
         rectangle3.setRadius(60);
         rectangle3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -479,6 +481,7 @@ public class main1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        rectangle5.setFont(new java.awt.Font("Afacad", 0, 12)); // NOI18N
         rectangle5.setPreferredSize(new java.awt.Dimension(434, 179));
         rectangle5.setRadius(60);
         rectangle5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -550,6 +553,19 @@ public class main1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        jComboBox1.setEditable(true);
+        jComboBox1.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
+        jComboBox1.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionForeground"));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month", "January ", "February ", "March ", "April ", "May", "June ", "July ", "August", "September", "October ", "November ", "December" }));
+        jComboBox1.setBorder(null);
+        jComboBox1.setMinimumSize(new java.awt.Dimension(134, 33));
+        jComboBox1.setPreferredSize(new java.awt.Dimension(150, 40));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
         background1Layout.setHorizontalGroup(
@@ -561,16 +577,19 @@ public class main1 extends javax.swing.JFrame {
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(43, 43, 43)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 44, 44)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(background1Layout.createSequentialGroup()
-                                .addComponent(rectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(rectangle4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(rectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(44, 44, 44)
+                                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
+                                        .addComponent(rectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(rectangle4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
         background1Layout.setVerticalGroup(
@@ -589,15 +608,17 @@ public class main1 extends javax.swing.JFrame {
                                 .addGap(144, 144, 144)
                                 .addComponent(rectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(background1Layout.createSequentialGroup()
-                                .addGap(113, 113, 113)
+                                .addGap(32, 32, 32)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(59, 59, 59)
                                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(rectangle2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(65, 65, 65)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rectangle4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rectangle5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(367, 367, 367))))
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -654,32 +675,36 @@ public class main1 extends javax.swing.JFrame {
     }//GEN-LAST:event_rectangle5MouseExited
 
     private void buttonIcon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon3ActionPerformed
-        main1 newFrame = new main1();
+        Main1 newFrame = new Main1();
         newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
         dispose();
     }//GEN-LAST:event_buttonIcon3ActionPerformed
 
     private void buttonIcon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon2ActionPerformed
-        main1 newFrame = new main1();
+        Main1 newFrame = new Main1();
         newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
         dispose();
     }//GEN-LAST:event_buttonIcon2ActionPerformed
 
     private void buttonIcon5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon5ActionPerformed
-        main1 newFrame = new main1();
+        Main1 newFrame = new Main1();
         newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
         dispose();
     }//GEN-LAST:event_buttonIcon5ActionPerformed
 
     private void buttonIcon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon4ActionPerformed
-        main1 newFrame = new main1();
+        Main1 newFrame = new Main1();
         newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
         dispose();
     }//GEN-LAST:event_buttonIcon4ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -712,7 +737,7 @@ public class main1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new main1().setVisible(true);
+                new Main1().setVisible(true);
             }
         });
     }
@@ -731,6 +756,7 @@ public class main1 extends javax.swing.JFrame {
     private button.ButtonIcon buttonIcon5;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
     private CustomFont.LabelText date;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
