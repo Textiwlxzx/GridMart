@@ -674,7 +674,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button11ActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="Order1.mwa1" name="mwa12">
+                <Component class="Order1.Payment" name="mwa12">
                 </Component>
               </SubComponents>
             </Container>

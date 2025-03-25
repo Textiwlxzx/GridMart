@@ -1,12 +1,14 @@
 package Order1;
 import javax.swing.*;
 import java.awt.*;
+import raven.glasspanepopup.GlassPanePopup;
 
-public class mwa1 extends JPanel {
+public class Payment extends JPanel {
+
     private JRadioButton b1, b2;
     private ButtonGroup g1;
 
-    public mwa1() {
+    public Payment() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         g1 = new ButtonGroup();
@@ -25,11 +27,5 @@ public class mwa1 extends JPanel {
 
         add(b1);
         add(b2);
-    }
-  public boolean CashSelected() {
-        return b1.isSelected();
-    }
-  public boolean QRSelected() {
-        return b2.isSelected();
-    }
+    } 
 }

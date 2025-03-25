@@ -6,18 +6,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JOptionPane;
+import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
 
 public class Main extends javax.swing.JFrame {
-private mwa1 payment;
     public Main() {
         GlassPanePopup.install(this);
         initComponents();
         dt();
         times();
-        payment = new mwa1();
     }
 
     public void dt() {
@@ -25,7 +25,6 @@ private mwa1 payment;
         Date d = new Date();
     
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    
         String dd = sdf.format(d);
         date.setText(dd);
     }
@@ -99,8 +98,8 @@ private mwa1 payment;
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        button11 = new button.Button1();
-        mwa12 = new Order1.mwa1();
+        buttonClear6 = new button.ButtonClear();
+        buttonClear1 = new button.ButtonClear();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -410,13 +409,23 @@ private mwa1 payment;
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel3.setText("Payment");
 
-        button11.setForeground(new java.awt.Color(0, 0, 0));
-        button11.setText("Pay");
-        button11.setFont(new java.awt.Font("Afacad", 1, 36)); // NOI18N
-        button11.setPreferredSize(new java.awt.Dimension(270, 73));
-        button11.addActionListener(new java.awt.event.ActionListener() {
+        buttonClear6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        buttonClear6.setText("Cash");
+        buttonClear6.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        buttonClear6.setPreferredSize(new java.awt.Dimension(121, 50));
+        buttonClear6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button11ActionPerformed(evt);
+                buttonClear6ActionPerformed(evt);
+            }
+        });
+
+        buttonClear1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        buttonClear1.setText("QrCode");
+        buttonClear1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        buttonClear1.setPreferredSize(new java.awt.Dimension(121, 50));
+        buttonClear1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonClear1ActionPerformed(evt);
             }
         });
 
@@ -425,32 +434,33 @@ private mwa1 payment;
         rectangleBorder11Layout.setHorizontalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder11Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(122, 122, 122))
             .addGroup(rectangleBorder11Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(26, 26, 26)
                 .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
-                    .addComponent(mwa12, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addGroup(rectangleBorder11Layout.createSequentialGroup()
+                        .addComponent(buttonClear6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         rectangleBorder11Layout.setVerticalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rectangleBorder11Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 431, Short.MAX_VALUE)
+                .addGap(510, 510, 510)
                 .addComponent(jLabel2)
-                .addGap(19, 19, 19)
+                .addGap(36, 36, 36)
                 .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(mwa12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+                .addGap(33, 33, 33)
+                .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(buttonClear6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
@@ -463,7 +473,7 @@ private mwa1 payment;
                     .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(132, 132, 132)
+                        .addGap(39, 39, 39)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(background1Layout.createSequentialGroup()
                                 .addComponent(rectangle12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -480,14 +490,12 @@ private mwa1 payment;
         background1Layout.setVerticalGroup(
             background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(background1Layout.createSequentialGroup()
                         .addGap(54, 54, 54)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -496,8 +504,11 @@ private mwa1 payment;
                         .addGap(40, 40, 40)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(35, 35, 35))
+                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(75, 75, 75))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -510,7 +521,7 @@ private mwa1 payment;
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background1, javax.swing.GroupLayout.DEFAULT_SIZE, 1032, Short.MAX_VALUE)
         );
 
         pack();
@@ -532,18 +543,18 @@ private mwa1 payment;
     private void buttonClear5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear5ActionPerformed
-
-    private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-         if (payment.CashSelected()) {
-                GlassPanePopup.showPopup(new Cash());
-        } else if (payment.QRSelected()) {
-                GlassPanePopup.showPopup(new QR());
-            }
-    }//GEN-LAST:event_button11ActionPerformed
-
+        
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button12ActionPerformed
+
+    private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
+    GlassPanePopup.showPopup(new QR());
+    }//GEN-LAST:event_buttonClear1ActionPerformed
+
+    private void buttonClear6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear6ActionPerformed
+      GlassPanePopup.showPopup(new Cash());
+    }//GEN-LAST:event_buttonClear6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -583,12 +594,13 @@ private mwa1 payment;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private Background.background background1;
-    private button.Button1 button11;
     private button.Button1 button12;
+    private button.ButtonClear buttonClear1;
     private button.ButtonClear buttonClear2;
     private button.ButtonClear buttonClear3;
     private button.ButtonClear buttonClear4;
     private button.ButtonClear buttonClear5;
+    private button.ButtonClear buttonClear6;
     private javax.swing.ButtonGroup buttonGroup1;
     private button.ButtonIcon buttonIcon1;
     private button.ButtonNoFillNoStroke buttonNoFillNoStroke2;
@@ -611,7 +623,6 @@ private mwa1 payment;
     private CustomFont.LabelText labelText7;
     private CustomFont.LabelText labelText8;
     private CustomFont.LabelText labelText9;
-    private Order1.mwa1 mwa12;
     private Rectangle.Rectangle1 rectangle11;
     private Rectangle.Rectangle1 rectangle12;
     private Rectangle.Rectangle1 rectangle13;

@@ -66,7 +66,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         button11 = new button.Button1();
-        mwa12 = new Order1.mwa1();
+        mwa12 = new Order1.Payment();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -574,7 +574,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private CustomFont.LabelText labelText7;
     private CustomFont.LabelText labelText8;
     private CustomFont.LabelText labelText9;
-    private Order1.mwa1 mwa12;
+    private Order1.Payment mwa12;
     private Rectangle.Rectangle1 rectangle11;
     private Rectangle.Rectangle1 rectangle12;
     private Rectangle.Rectangle1 rectangle13;
