@@ -1,8 +1,7 @@
 
-package Order3;
+package Order1;
 
 
-import MainManagement.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -10,10 +9,10 @@ import java.util.Date;
 import javax.swing.Timer;
 
 
-public class Main1 extends javax.swing.JFrame {
+public class Receipt extends javax.swing.JFrame {
 
     
-    public Main1() {
+    public Receipt() {
         initComponents();
         dt();
         times();
@@ -65,9 +64,9 @@ public class Main1 extends javax.swing.JFrame {
         background1 = new Background.background();
         rectangleBorder1 = new Rectangle.RectangleBorder();
         buttonClear2 = new button.ButtonClear();
-        buttonClear1 = new button.ButtonClear();
         buttonClear3 = new button.ButtonClear();
         buttonClear4 = new button.ButtonClear();
+        button11 = new button.Button1();
         rectangleBorder2 = new Rectangle.RectangleBorder();
         buttonClear5 = new button.ButtonClear();
         labelText2 = new CustomFont.LabelText();
@@ -103,16 +102,6 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        buttonClear1.setText("Order");
-        buttonClear1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
-        buttonClear1.setPreferredSize(new java.awt.Dimension(278, 60));
-        buttonClear1.setRadius(55);
-        buttonClear1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonClear1ActionPerformed(evt);
-            }
-        });
-
         buttonClear3.setText("Expired");
         buttonClear3.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear3.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -133,6 +122,17 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
+        button11.setForeground(new java.awt.Color(0, 0, 0));
+        button11.setText("Order");
+        button11.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        button11.setPreferredSize(new java.awt.Dimension(278, 60));
+        button11.setRadius(55);
+        button11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout rectangleBorder1Layout = new javax.swing.GroupLayout(rectangleBorder1);
         rectangleBorder1.setLayout(rectangleBorder1Layout);
         rectangleBorder1Layout.setHorizontalGroup(
@@ -140,9 +140,9 @@ public class Main1 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder1Layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(22, 22, 22))
         );
@@ -151,9 +151,9 @@ public class Main1 extends javax.swing.JFrame {
             .addGroup(rectangleBorder1Layout.createSequentialGroup()
                 .addGap(89, 89, 89)
                 .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(26, 26, 26)
+                .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -201,7 +201,7 @@ public class Main1 extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 232, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -341,10 +341,6 @@ public class Main1 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonClear1ActionPerformed
-
     private void buttonClear2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear2ActionPerformed
@@ -360,6 +356,10 @@ public class Main1 extends javax.swing.JFrame {
     private void buttonClear5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear5ActionPerformed
+
+    private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -378,28 +378,30 @@ public class Main1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Receipt.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Receipt.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Receipt.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Main1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Receipt.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Main1().setVisible(true);
+                new Receipt().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private Background.background background1;
-    private button.ButtonClear buttonClear1;
+    private button.Button1 button11;
     private button.ButtonClear buttonClear2;
     private button.ButtonClear buttonClear3;
     private button.ButtonClear buttonClear4;

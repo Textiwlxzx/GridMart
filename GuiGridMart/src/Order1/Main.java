@@ -67,9 +67,9 @@ public class Main extends javax.swing.JFrame {
         background1 = new Background.background();
         rectangleBorder1 = new Rectangle.RectangleBorder();
         buttonClear2 = new button.ButtonClear();
-        buttonClear1 = new button.ButtonClear();
         buttonClear3 = new button.ButtonClear();
         buttonClear4 = new button.ButtonClear();
+        button12 = new button.Button1();
         rectangleBorder2 = new Rectangle.RectangleBorder();
         buttonClear5 = new button.ButtonClear();
         labelText2 = new CustomFont.LabelText();
@@ -120,17 +120,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        buttonClear1.setBackground(new java.awt.Color(206, 192, 236));
-        buttonClear1.setText("Order");
-        buttonClear1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
-        buttonClear1.setPreferredSize(new java.awt.Dimension(278, 60));
-        buttonClear1.setRadius(55);
-        buttonClear1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonClear1ActionPerformed(evt);
-            }
-        });
-
         buttonClear3.setText("Expired");
         buttonClear3.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear3.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -141,6 +130,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        buttonClear4.setBackground(new java.awt.Color(206, 192, 236));
         buttonClear4.setText("Purchased");
         buttonClear4.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         buttonClear4.setPreferredSize(new java.awt.Dimension(278, 60));
@@ -151,27 +141,38 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        button12.setForeground(new java.awt.Color(0, 0, 0));
+        button12.setText("Order");
+        button12.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
+        button12.setPreferredSize(new java.awt.Dimension(278, 60));
+        button12.setRadius(55);
+        button12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button12ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout rectangleBorder1Layout = new javax.swing.GroupLayout(rectangleBorder1);
         rectangleBorder1.setLayout(rectangleBorder1Layout);
         rectangleBorder1Layout.setHorizontalGroup(
             rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rectangleBorder1Layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder1Layout.createSequentialGroup()
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(21, 21, 21))
         );
         rectangleBorder1Layout.setVerticalGroup(
             rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rectangleBorder1Layout.createSequentialGroup()
                 .addGap(89, 89, 89)
                 .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(28, 28, 28)
+                .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(buttonClear3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(buttonClear4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -462,7 +463,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(39, 39, 39)
+                        .addGap(132, 132, 132)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(background1Layout.createSequentialGroup()
                                 .addComponent(rectangle12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -481,19 +482,21 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
                 .addContainerGap(38, Short.MAX_VALUE)
                 .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(background1Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
+                        .addGap(35, 35, 35)
+                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(background1Layout.createSequentialGroup()
+                        .addGap(54, 54, 54)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rectangle11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rectangle12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(40, 40, 40)
                         .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rectangle13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(rectangle14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(35, 35, 35))
         );
 
@@ -514,10 +517,6 @@ public class Main extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void buttonClear1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_buttonClear1ActionPerformed
-
     private void buttonClear2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClear2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonClear2ActionPerformed
@@ -535,8 +534,12 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonClear5ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.showPopup(new Cash());dispose();
+        GlassPanePopup.showPopup(new Cash());
     }//GEN-LAST:event_button11ActionPerformed
+
+    private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button12ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -577,7 +580,7 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private Background.background background1;
     private button.Button1 button11;
-    private button.ButtonClear buttonClear1;
+    private button.Button1 button12;
     private button.ButtonClear buttonClear2;
     private button.ButtonClear buttonClear3;
     private button.ButtonClear buttonClear4;

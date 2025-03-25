@@ -4,6 +4,8 @@
  */
 package Order1;
 
+import MainManagement.Main1;
+import javax.swing.SwingUtilities;
 import raven.glasspanepopup.GlassPanePopup;
 
 /**
@@ -131,7 +133,10 @@ public class Cash extends javax.swing.JPanel {
     }//GEN-LAST:event_textField2ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
-        GlassPanePopup.closePopupLast();
+    Receipt mainFrame = new Receipt(); 
+    mainFrame.setVisible(true);
+
+    SwingUtilities.getWindowAncestor(this).dispose();
     }//GEN-LAST:event_button11ActionPerformed
 
 

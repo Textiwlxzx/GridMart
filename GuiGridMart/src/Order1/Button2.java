@@ -1,22 +1,22 @@
-package button;
+package Order1;
 
+import button.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Font;
 import java.awt.geom.RoundRectangle2D;
 
-public class ButtonClear extends JButton{
-    
+public class Button2 extends JButton {
+
     private int radius = 0;
-    
-    public ButtonClear(){
-        setOpaque(false);
+
+    public Button2() {
         setContentAreaFilled(false);
-        setBorderPainted(true);
-        setForeground(new Color(54, 54, 54));
+        setBackground(new Color(206, 192, 236));
+        setForeground(new Color(255, 255, 255));
         setFont(new Font("Afacad", Font.BOLD, 16));
     }
-    
+
     public int getRadius() {
         return radius;
     }
@@ -24,17 +24,16 @@ public class ButtonClear extends JButton{
     public void setRadius(int radius) {
         this.radius = radius;
     }
-    
+
     @Override
-    protected void paintBorder(Graphics g) {
+    protected void paintComponent(Graphics g) {
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
         g2.setColor(getBackground());
-        g2.setColor(getForeground());
-        g2.setStroke(new BasicStroke(1));
-        g2.draw(new RoundRectangle2D.Float(0, 0, getWidth() -1, getHeight() -1, radius, radius));
-        
+        g2.fill(new RoundRectangle2D.Float(0, 0, getWidth(), getHeight(), radius, radius));
+
+        super.paintComponent(g);
         g2.dispose();
-        super.paintComponent(g);        
     }
 }
