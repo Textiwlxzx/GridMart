@@ -1,6 +1,4 @@
-
 package expired;
-
 
 import MainManagement.*;
 import java.awt.event.ActionEvent;
@@ -10,50 +8,56 @@ import java.util.Date;
 import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
-
 public class main1 extends javax.swing.JFrame {
 
-    
     public main1() {
         initComponents();
         dt();
         times();
         GlassPanePopup.install(this);
     }
-    
-    public void dt() {
-        
-        Date d = new Date();
-    
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    
-        String dd = sdf.format(d);
-        date.setText(dd);
-    }
 
-    Timer t;
-    SimpleDateFormat st;
+    public void dt() {
+        Thread dateThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    Date d = new Date();
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                    String dd = sdf.format(d);
+                    date.setText(dd);
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        dateThread.start();
+    }
 
     public void times() {
-    
-        t = new Timer(0, new ActionListener() {
-        
+        Thread timeThread = new Thread(new Runnable() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-            
-            
-                Date dt = new Date();
-                st = new SimpleDateFormat("hh:mm:ss a");
-            
-                String tt = st.format(dt);
-                time.setText(tt);
-        
+            public void run() {
+                while (true) {
+                    Date dt = new Date();
+                    SimpleDateFormat st = new SimpleDateFormat("hh:mm:ss a");
+                    String tt = st.format(dt);
+                    time.setText(tt);
+
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
-        }); {
-    
-        t.start(); 
+        });
+        timeThread.start();
     }
-}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -650,31 +654,31 @@ public class main1 extends javax.swing.JFrame {
     }//GEN-LAST:event_rectangle5MouseExited
 
     private void buttonIcon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon3ActionPerformed
-    main1 newFrame = new main1();
-    newFrame.setVisible(true);
-    GlassPanePopup.showPopup(new popSure());
-    dispose();
+        main1 newFrame = new main1();
+        newFrame.setVisible(true);
+        GlassPanePopup.showPopup(new popSure());
+        dispose();
     }//GEN-LAST:event_buttonIcon3ActionPerformed
 
     private void buttonIcon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon2ActionPerformed
-    main1 newFrame = new main1();
-    newFrame.setVisible(true);
-    GlassPanePopup.showPopup(new popSure());
-    dispose();
+        main1 newFrame = new main1();
+        newFrame.setVisible(true);
+        GlassPanePopup.showPopup(new popSure());
+        dispose();
     }//GEN-LAST:event_buttonIcon2ActionPerformed
 
     private void buttonIcon5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon5ActionPerformed
-    main1 newFrame = new main1();
-    newFrame.setVisible(true);
-    GlassPanePopup.showPopup(new popSure());
-    dispose();
+        main1 newFrame = new main1();
+        newFrame.setVisible(true);
+        GlassPanePopup.showPopup(new popSure());
+        dispose();
     }//GEN-LAST:event_buttonIcon5ActionPerformed
 
     private void buttonIcon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon4ActionPerformed
-    main1 newFrame = new main1();
-    newFrame.setVisible(true);
-    GlassPanePopup.showPopup(new popSure());
-    dispose();
+        main1 newFrame = new main1();
+        newFrame.setVisible(true);
+        GlassPanePopup.showPopup(new popSure());
+        dispose();
     }//GEN-LAST:event_buttonIcon4ActionPerformed
 
     /**
@@ -685,7 +689,7 @@ public class main1 extends javax.swing.JFrame {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */ 
+         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
