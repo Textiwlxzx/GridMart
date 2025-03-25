@@ -27,7 +27,9 @@
               <Component id="b_ess" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               <Component id="b_others" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="60" max="32767" attributes="0"/>
+              <EmptySpace pref="124" max="32767" attributes="0"/>
+              <Component id="b_add" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -41,8 +43,9 @@
                   <Component id="b_ess" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="b_food" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="b_others" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="b_add" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -52,7 +55,7 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Drinks"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Afacad" size="24" style="0"/>
+          <Font name="Afacad" size="24" style="1"/>
         </Property>
       </Properties>
       <Events>
@@ -106,6 +109,14 @@
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="b_othersMouseClicked"/>
         <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="b_othersMouseEntered"/>
+      </Events>
+    </Component>
+    <Component class="button.Button1" name="b_add">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="add"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b_addActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

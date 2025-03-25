@@ -90,7 +90,6 @@ public void times() {
         labelText5 = new CustomFont.LabelText();
         time = new CustomFont.LabelText();
         b_setting = new button.ButtonIcon();
-        menuPanel = new Rectangle.Panel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -265,19 +264,6 @@ public void times() {
                 .addGap(22, 22, 22))
         );
 
-        menuPanel.setPreferredSize(new java.awt.Dimension(769, 77));
-
-        javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
-        menuPanel.setLayout(menuPanelLayout);
-        menuPanelLayout.setHorizontalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 769, Short.MAX_VALUE)
-        );
-        menuPanelLayout.setVerticalGroup(
-            menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 77, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
         background1Layout.setHorizontalGroup(
@@ -286,10 +272,7 @@ public void times() {
                 .addGap(51, 51, 51)
                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addComponent(con1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(con1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(52, Short.MAX_VALUE))
         );
         background1Layout.setVerticalGroup(
@@ -297,15 +280,9 @@ public void times() {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, background1Layout.createSequentialGroup()
                 .addContainerGap(35, Short.MAX_VALUE)
                 .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                        .addComponent(con1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35))
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addComponent(con1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -327,24 +304,24 @@ public void times() {
         
     
     private void b_productMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_productMouseClicked
-        handleButtonClick2(b_product);
+        //handleButtonClick2(b_product);
         
     }//GEN-LAST:event_b_productMouseClicked
 
     private void b_orderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_orderMouseClicked
-        handleButtonClick(b_order);
+        //handleButtonClick(b_order);
     }//GEN-LAST:event_b_orderMouseClicked
 
     private void b_expiredMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_expiredMouseClicked
-        handleButtonClick(b_expired);
+        //handleButtonClick(b_expired);
     }//GEN-LAST:event_b_expiredMouseClicked
 
     private void b_purchasedMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_purchasedMouseClicked
-        handleButtonClick(b_purchased);
+        //handleButtonClick(b_purchased);
     }//GEN-LAST:event_b_purchasedMouseClicked
 
     private void b_totalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_totalMouseClicked
-        handleButtonClick(b_total);
+        //handleButtonClick(b_total);
     }//GEN-LAST:event_b_totalMouseClicked
 
     private void b_productMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_productMouseEntered
@@ -380,7 +357,7 @@ public void times() {
     }//GEN-LAST:event_b_logoutActionPerformed
 
     
-    private void addMenuPanel(MenuItem item) {
+    /*private void addMenuPanel(MenuItem item) {
         menuPanel.setLayout(new BorderLayout());
         menuPanel.add(item, BorderLayout.CENTER); 
         menuPanel.revalidate();
@@ -447,7 +424,7 @@ public void times() {
             addMenuPanel(item);
             current = b;
         } 
-    }
+    }*/
     
     /**
      * @param args the command line arguments
@@ -498,7 +475,6 @@ public void times() {
     private CustomFont.LabelText l_name;
     private CustomFont.LabelText labelText3;
     private CustomFont.LabelText labelText5;
-    private Rectangle.Panel menuPanel;
     private Rectangle.RectangleBorder rectangleBorder2;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables

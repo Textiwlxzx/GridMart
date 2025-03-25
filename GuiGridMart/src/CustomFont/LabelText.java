@@ -11,4 +11,5 @@ public class LabelText extends JLabel {
         setForeground(new Color(54, 54, 54));
         setFont(new Font("Afacad", Font.PLAIN, 24));
     }
+    
 }

@@ -4,10 +4,12 @@
  */
 package MainManagement;
 
+import Product.ProductAdd;
 import button.ButtonNoFillNoStroke;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import raven.glasspanepopup.GlassPanePopup;
 
 /**
  *
@@ -37,9 +39,10 @@ public class MenuItem extends javax.swing.JPanel {
         b_ess = new button.ButtonNoFillNoStroke();
         b_food = new button.ButtonNoFillNoStroke();
         b_others = new button.ButtonNoFillNoStroke();
+        b_add = new button.Button1();
 
         b_drink.setText("Drinks");
-        b_drink.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
+        b_drink.setFont(new java.awt.Font("Afacad", 1, 24)); // NOI18N
         b_drink.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 b_drinkMouseClicked(evt);
@@ -93,6 +96,13 @@ public class MenuItem extends javax.swing.JPanel {
             }
         });
 
+        b_add.setText("add");
+        b_add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b_addActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -108,7 +118,9 @@ public class MenuItem extends javax.swing.JPanel {
                 .addComponent(b_ess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(b_others, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 124, Short.MAX_VALUE)
+                .addComponent(b_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -119,29 +131,30 @@ public class MenuItem extends javax.swing.JPanel {
                     .addComponent(b_snack, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_ess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(b_food, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b_others, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(b_others, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(b_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void b_drinkMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_drinkMouseClicked
-        handleButtonClick(b_drink);
+        //handleButtonClick(b_drink);
     }//GEN-LAST:event_b_drinkMouseClicked
 
     private void b_snackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_snackMouseClicked
-        handleButtonClick(b_snack);
+        //handleButtonClick(b_snack);
     }//GEN-LAST:event_b_snackMouseClicked
 
     private void b_foodMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_foodMouseClicked
-        handleButtonClick(b_food);
+        //handleButtonClick(b_food);
     }//GEN-LAST:event_b_foodMouseClicked
 
     private void b_essMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_essMouseClicked
-        handleButtonClick(b_ess);
+        //handleButtonClick(b_ess);
     }//GEN-LAST:event_b_essMouseClicked
 
     private void b_othersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_othersMouseClicked
-        handleButtonClick(b_others);
+        //handleButtonClick(b_others);
     }//GEN-LAST:event_b_othersMouseClicked
 
     private void b_drinkMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_drinkMouseEntered
@@ -163,8 +176,12 @@ public class MenuItem extends javax.swing.JPanel {
     private void b_othersMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b_othersMouseEntered
         b_others.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
     }//GEN-LAST:event_b_othersMouseEntered
+
+    private void b_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b_addActionPerformed
+        GlassPanePopup.showPopup(new ProductAdd());
+    }//GEN-LAST:event_b_addActionPerformed
     
-    private ButtonNoFillNoStroke current;
+    /*private ButtonNoFillNoStroke current;
     
     private void handleButtonClick(ButtonNoFillNoStroke b) {
         if (current == b) {
@@ -179,9 +196,10 @@ public class MenuItem extends javax.swing.JPanel {
             current = b;
         }
            
-    }
+    }*/
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private button.Button1 b_add;
     private button.ButtonNoFillNoStroke b_drink;
     private button.ButtonNoFillNoStroke b_ess;
     private button.ButtonNoFillNoStroke b_food;
