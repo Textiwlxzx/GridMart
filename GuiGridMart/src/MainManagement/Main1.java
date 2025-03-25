@@ -23,39 +23,48 @@ public class Main1 extends javax.swing.JFrame {
         GlassPanePopup.install(this);
     }
     
-    public void dt() {
-        
-        Date d = new Date();
-    
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-    
-        String dd = sdf.format(d);
-        date.setText(dd);
-    }
+public void dt() {
+    Thread dateThread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            while (true) {
+                Date d = new Date();
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+                String dd = sdf.format(d);
+                date.setText(dd);
 
-    Timer t;
-    SimpleDateFormat st;
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    });
+    dateThread.start(); 
+}
 
-    public void times() {
-    
-        t = new Timer(0, new ActionListener() {
-        
-            @Override
-            public void actionPerformed(ActionEvent e) {
-            
-            
+public void times() {
+    Thread timeThread = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            while (true) {
                 Date dt = new Date();
-                st = new SimpleDateFormat("hh:mm:ss a");
-            
+                SimpleDateFormat st = new SimpleDateFormat("hh:mm:ss a");
                 String tt = st.format(dt);
                 time.setText(tt);
-        
+
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        }); {
-    
-        t.start(); 
-    }
+        }
+    });
+    timeThread.start();
 }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
