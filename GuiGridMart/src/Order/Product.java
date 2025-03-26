@@ -4,6 +4,12 @@
  */
 package Order;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import java.awt.geom.RoundRectangle2D;
+
 /**
  *
  * @author ADMIN
@@ -15,6 +21,16 @@ public class Product extends javax.swing.JPanel {
      */
     public Product() {
         initComponents();
+        
+    }
+     @Override
+    protected void paintComponent(Graphics grphcs) {
+        Graphics2D g2 = (Graphics2D) grphcs.create();
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2.setColor(new Color(255,255,255));
+        g2.fill(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 80, 80));
+        g2.dispose();
+        super.paintComponent(grphcs);
     }
 
     /**
