@@ -148,7 +148,6 @@ public class Main1 extends javax.swing.JFrame {
             }
         });
 
-        button11.setForeground(new java.awt.Color(0, 0, 0));
         button11.setText("Expired");
         button11.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         button11.setPreferredSize(new java.awt.Dimension(278, 60));
