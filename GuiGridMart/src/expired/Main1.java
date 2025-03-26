@@ -202,6 +202,16 @@ public class Main1 extends javax.swing.JFrame {
 
         buttonNoFillNoStroke2.setText("Log out");
         buttonNoFillNoStroke2.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
+        buttonNoFillNoStroke2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                buttonNoFillNoStroke2MouseEntered(evt);
+            }
+        });
+        buttonNoFillNoStroke2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonNoFillNoStroke2ActionPerformed(evt);
+            }
+        });
 
         labelText3.setText("Date");
 
@@ -671,31 +681,19 @@ public class Main1 extends javax.swing.JFrame {
     }//GEN-LAST:event_rectangle5MouseExited
 
     private void buttonIcon3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon3ActionPerformed
-        Main1 newFrame = new Main1();
-        newFrame.setVisible(true);
-        GlassPanePopup.showPopup(new popSure());
-        dispose();
+       GlassPanePopup.showPopup(new popSure());
     }//GEN-LAST:event_buttonIcon3ActionPerformed
 
     private void buttonIcon2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon2ActionPerformed
-        Main1 newFrame = new Main1();
-        newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
-        dispose();
     }//GEN-LAST:event_buttonIcon2ActionPerformed
 
     private void buttonIcon5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon5ActionPerformed
-        Main1 newFrame = new Main1();
-        newFrame.setVisible(true);
         GlassPanePopup.showPopup(new popSure());
-        dispose();
     }//GEN-LAST:event_buttonIcon5ActionPerformed
 
     private void buttonIcon4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon4ActionPerformed
-        Main1 newFrame = new Main1();
-        newFrame.setVisible(true);
-        GlassPanePopup.showPopup(new popSure());
-        dispose();
+       GlassPanePopup.showPopup(new popSure());
     }//GEN-LAST:event_buttonIcon4ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -705,6 +703,14 @@ public class Main1 extends javax.swing.JFrame {
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button11ActionPerformed
+
+    private void buttonNoFillNoStroke2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNoFillNoStroke2ActionPerformed
+
+    }//GEN-LAST:event_buttonNoFillNoStroke2ActionPerformed
+
+    private void buttonNoFillNoStroke2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonNoFillNoStroke2MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonNoFillNoStroke2MouseEntered
 
     /**
      * @param args the command line arguments
