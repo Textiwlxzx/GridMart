@@ -553,9 +553,9 @@ public class Main1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        jComboBox1.setBackground(new java.awt.Color(204, 204, 255));
         jComboBox1.setEditable(false);
         jComboBox1.setFont(new java.awt.Font("Afacad", 0, 24)); // NOI18N
-        jComboBox1.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBoxMenuItem.selectionForeground"));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Month", "January ", "February ", "March ", "April ", "May", "June ", "July ", "August", "September", "October ", "November ", "December" }));
         jComboBox1.setBorder(null);
         jComboBox1.setMinimumSize(new java.awt.Dimension(134, 33));
@@ -609,7 +609,7 @@ public class Main1 extends javax.swing.JFrame {
                                 .addComponent(rectangle1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(background1Layout.createSequentialGroup()
                                 .addGap(32, 32, 32)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(59, 59, 59)
                                 .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(rectangle3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
