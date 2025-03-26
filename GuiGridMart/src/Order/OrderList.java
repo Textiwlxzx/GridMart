@@ -19,12 +19,11 @@ public class OrderList extends javax.swing.JPanel {
     /**
      * Creates new form Product
      */
-    public OrderList(String name) {
+    public OrderList(String labelText1) {
         initComponents();
         labelText4.setText(name);
-        
-        
     }
+    
      @Override
     protected void paintComponent(Graphics grphcs) {
         Graphics2D g2 = (Graphics2D) grphcs.create();
@@ -34,6 +33,7 @@ public class OrderList extends javax.swing.JPanel {
         g2.dispose();
         super.paintComponent(grphcs);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

@@ -16,12 +16,12 @@ public class ProductPanel1 extends javax.swing.JPanel {
     public ProductPanel1() {
         initComponents();
         setOpaque(false);
-        Main.newJPanel1.add();
      
     }
 public String getTextFromLabel() {
         return labelText1.getText();
 }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
