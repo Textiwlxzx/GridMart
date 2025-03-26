@@ -1,6 +1,5 @@
 package Rectangle;
 
-import Order1.*;
 import Rectangle.*;
 import javax.swing.JPanel;
 import java.awt.*;
