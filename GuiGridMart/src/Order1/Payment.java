@@ -27,5 +27,12 @@ public class Payment extends JPanel {
 
         add(b1);
         add(b2);
-    } 
+    }
+    public boolean isCashSelected() {
+    return b1.isSelected();
+}
+
+    public boolean isQRSelected() {
+     return b2.isSelected();
+        }
 }
