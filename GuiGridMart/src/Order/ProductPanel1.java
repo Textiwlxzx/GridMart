@@ -1,20 +1,19 @@
 
 package Order;
-import Order.Main.MyPanelContainer;
+import Order.Main1.MyPanelContainer;
 
 public class ProductPanel1 extends javax.swing.JPanel {
 private MyPanelContainer container;
-    
     public ProductPanel1(MyPanelContainer container) {
         this.container = container; 
         initComponents();
         setOpaque(false);
         
     }
-public String getTextFromLabel() {
-        return labelText1.getText();
-}
 
+public String getProductName() {
+        return labelText1.getText();
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -86,8 +85,9 @@ public String getTextFromLabel() {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rectangle11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rectangle11MouseClicked
-       String proname = getTextFromLabel();
-        addProductToOrderList(proname);
+       String productName = getProductName();
+        addProductToOrderList(productName);
+       
     }//GEN-LAST:event_rectangle11MouseClicked
 // void addProductToOrderList1(String proname){
 //   OrderList orderlist = new OrderList(proname);
@@ -96,14 +96,13 @@ public String getTextFromLabel() {
     //newJPanel2.repaint();
     //newJPanel2.revalidate();
 //}         
-private void addProductToOrderList(String proname){
-    OrderList orderlist = new OrderList(proname);
-
+private void addProductToOrderList(String productName) {
+    OrderList orderList = new OrderList(productName); // สร้างอ็อบเจ็กต์ OrderList
+    orderList.setProductName(productName); // เซ็ตค่าชื่อสินค้า
     
-        container.getNewJPanel2().add(orderlist);
-        container.getNewJPanel2().repaint();
-        container.getNewJPanel2().revalidate();
-
+    container.getNewJPanel2().add(orderList); // เพิ่มเข้า Panel
+    container.getNewJPanel2().repaint();
+    container.getNewJPanel2().revalidate();
 }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private CustomFont.LabelText labelText1;

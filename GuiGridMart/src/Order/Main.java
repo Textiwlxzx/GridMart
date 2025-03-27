@@ -17,8 +17,6 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         dt();
         times();
-        MyPanelContainer container = new MyPanelContainer();  
-        ProductPanel1 productPanel = new ProductPanel1(container);
 
     }
 
@@ -372,13 +370,7 @@ public class Main extends javax.swing.JFrame {
             GlassPanePopup.showPopup(new QR());
         }
     }//GEN-LAST:event_button11ActionPerformed
-public class MyPanelContainer {
-    private JPanel newJPanel2 = new JPanel();
 
-    public JPanel getNewJPanel2() {
-        return newJPanel2;
-    }
-}
  
 private void addProductToOrderList(String proname){
     OrderList orderlist = new OrderList(proname);

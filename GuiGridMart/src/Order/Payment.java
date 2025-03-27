@@ -14,7 +14,7 @@ public class Payment extends JPanel {
         b1 = new JRadioButton("Cash");
         b2 = new JRadioButton("QR Code");
         setBackground(Color.WHITE);
-        Font bigFont = new Font("Afacad", Font.PLAIN, 20);
+        Font bigFont = new Font("Afacad", Font.PLAIN, 24);
         b1.setFont(bigFont);
         b2.setFont(bigFont);
 
