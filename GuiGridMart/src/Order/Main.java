@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JPanel;
 import javax.swing.Timer;
 import raven.glasspanepopup.GlassPanePopup;
 
@@ -16,6 +17,9 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         dt();
         times();
+        MyPanelContainer container = new MyPanelContainer();  
+        ProductPanel1 productPanel = new ProductPanel1(container);
+
     }
 
     public void dt() {
@@ -25,6 +29,7 @@ public class Main extends javax.swing.JFrame {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         String dd = sdf.format(d);
         date.setText(dd);
+        //newJPanel1.setLayout(new BoxLayout(newJPanel1,BoxLayout.Y_AXIS));
     }
 
     Timer t;
@@ -83,11 +88,7 @@ public class Main extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         payment1 = new Order.Payment();
         button11 = new button.Button1();
-        newJPanel1 = new Rectangle.NewJPanel();
-        productPanel11 = new Order.ProductPanel1();
-        productPanel13 = new Order.ProductPanel1();
-        productPanel14 = new Order.ProductPanel1();
-        productPanel15 = new Order.ProductPanel1();
+        newJPanel2 = new Rectangle.NewJPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -256,16 +257,8 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout newJPanel1Layout = new javax.swing.GroupLayout(newJPanel1);
-        newJPanel1.setLayout(newJPanel1Layout);
-        newJPanel1Layout.setHorizontalGroup(
-            newJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 294, Short.MAX_VALUE)
-        );
-        newJPanel1Layout.setVerticalGroup(
-            newJPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 412, Short.MAX_VALUE)
-        );
+        newJPanel2.setMinimumSize(new java.awt.Dimension(285, 100));
+        newJPanel2.setLayout(new java.awt.FlowLayout());
 
         javax.swing.GroupLayout rectangleBorder11Layout = new javax.swing.GroupLayout(rectangleBorder11);
         rectangleBorder11.setLayout(rectangleBorder11Layout);
@@ -274,6 +267,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectangleBorder11Layout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(newJPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 273, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
                     .addGroup(rectangleBorder11Layout.createSequentialGroup()
@@ -286,19 +280,15 @@ public class Main extends javax.swing.JFrame {
                                 .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(31, 31, 31))))
                     .addComponent(payment1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addGroup(rectangleBorder11Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         rectangleBorder11Layout.setVerticalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rectangleBorder11Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
+                .addGap(7, 7, 7)
+                .addComponent(newJPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
@@ -306,14 +296,8 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(payment1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(41, 41, 41))
         );
-
-        productPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                productPanel11MouseClicked(evt);
-            }
-        });
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
         background1.setLayout(background1Layout);
@@ -325,15 +309,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(rectangleBorder2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(background1Layout.createSequentialGroup()
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(productPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(productPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(39, 39, 39)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(productPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(productPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(68, 68, 68)
+                        .addGap(719, 719, 719)
                         .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(23, 23, 23))
         );
@@ -348,16 +324,7 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(rectangleBorder1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(background1Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
-                        .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(background1Layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(productPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(productPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addGroup(background1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(productPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(productPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(rectangleBorder11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
 
@@ -400,20 +367,27 @@ public class Main extends javax.swing.JFrame {
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
         if (payment1.isCashSelected()) {
-        GlassPanePopup.showPopup(new Cash());
-    } else if (payment1.isQRSelected()) {
-        GlassPanePopup.showPopup(new QR());
-    }
+            GlassPanePopup.showPopup(new Cash());
+        } else if (payment1.isQRSelected()) {
+            GlassPanePopup.showPopup(new QR());
+        }
     }//GEN-LAST:event_button11ActionPerformed
+public class MyPanelContainer {
+    private JPanel newJPanel2 = new JPanel();
 
-    private void productPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productPanel11MouseClicked
-            String text = getTextFromLabel();
-                ProductPanel1 mwa  = new ProductPanel1();
-                mwa.setTextToLabel(text);
-    }//GEN-LAST:event_productPanel11MouseClicked
-public String getTextFromLabel() {
-        return productPanel11.getText();
+    public JPanel getNewJPanel2() {
+        return newJPanel2;
     }
+}
+ 
+private void addProductToOrderList(String proname){
+    OrderList orderlist = new OrderList(proname);
+    
+    newJPanel2.add(orderlist);
+    newJPanel2.repaint();
+    newJPanel2.revalidate();
+            
+}
     /**
      * @param args the command line arguments
      */
@@ -468,13 +442,9 @@ public String getTextFromLabel() {
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
     private CustomFont.LabelText labelText5;
-    private Rectangle.NewJPanel newJPanel1;
+    private Rectangle.NewJPanel newJPanel2;
     private Order.Payment payment1;
-    private Order.ProductPanel1 productPanel11;
     private Order.ProductPanel1 productPanel12;
-    private Order.ProductPanel1 productPanel13;
-    private Order.ProductPanel1 productPanel14;
-    private Order.ProductPanel1 productPanel15;
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder1 rectangleBorder11;
     private Rectangle.RectangleBorder rectangleBorder2;

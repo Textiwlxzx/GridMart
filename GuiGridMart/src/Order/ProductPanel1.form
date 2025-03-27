@@ -36,6 +36,9 @@
       <Properties>
         <Property name="radius" type="int" value="35"/>
       </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rectangle11MouseClicked"/>
+      </Events>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -72,7 +75,7 @@
       <SubComponents>
         <Component class="CustomFont.LabelText" name="labelText1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Product&apos;s Name"/>
+            <Property name="text" type="java.lang.String" value="Coke"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[152, 32]"/>
             </Property>

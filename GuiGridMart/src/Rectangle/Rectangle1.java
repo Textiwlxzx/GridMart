@@ -30,4 +30,5 @@ public class Rectangle1 extends JPanel{
         
         super.paintComponent(g);
     }
+
 }
