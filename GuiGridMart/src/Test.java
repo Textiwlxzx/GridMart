@@ -11,5 +11,9 @@ public class Test {
 
     public Test() {
     }
+
+    void setVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
     
 }

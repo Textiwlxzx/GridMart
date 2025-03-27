@@ -1,7 +1,10 @@
-public class Test extends javax.swing.JFrame {
+import Background.backgroundblur;
+import expired.ComboBoxSuggestion;
+import javax.swing.JComboBox;
+public class Test_1 extends javax.swing.JFrame {
 
    
-    public Test() {
+    public Test_1() {
         initComponents();
     }
 
@@ -11,7 +14,8 @@ public class Test extends javax.swing.JFrame {
     private void initComponents() {
 
         backgroundblur1 = new Background.backgroundblur();
-        comboBoxSuggestion1 = new ComboBox.ComboBoxSuggestion();
+        comboBoxSuggestion1 = new ComboBoxSuggestion();
+
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,13 +61,21 @@ public class Test extends javax.swing.JFrame {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Test().setVisible(true);
+                new Test_1().setVisible(true);
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    
     private Background.backgroundblur backgroundblur1;
-    private ComboBox.ComboBoxSuggestion comboBoxSuggestion1;
-    // End of variables declaration//GEN-END:variables
+    private ComboBoxSuggestion comboBoxSuggestion1;
+
+
+public class ComboBoxSuggestion extends JComboBox {
+    public ComboBoxSuggestion() {
+        super();
+    }
+}
+
+    
 }

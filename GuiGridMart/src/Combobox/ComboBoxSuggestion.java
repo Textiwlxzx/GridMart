@@ -4,10 +4,16 @@
  */
 package Combobox;
 
+import javax.swing.DefaultComboBoxModel;
+
 /**
  *
  * @author PREDATOR
  */
 public class ComboBoxSuggestion {
+
+    public void setModel(DefaultComboBoxModel defaultComboBoxModel) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

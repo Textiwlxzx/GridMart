@@ -1,6 +1,7 @@
 package expired;
 
 import MainManagement.*;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -82,7 +83,6 @@ public class Main1 extends javax.swing.JFrame {
         buttonClear1 = new button.ButtonClear();
         buttonClear4 = new button.ButtonClear();
         button11 = new button.Button1();
-        scrollBarCustom1 = new expired.ScrollBarCustom();
         rectangleBorder2 = new Rectangle.RectangleBorder();
         buttonClear5 = new button.ButtonClear();
         labelText2 = new CustomFont.LabelText();
@@ -179,17 +179,13 @@ public class Main1 extends javax.swing.JFrame {
                     .addComponent(buttonClear1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(buttonClear2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(button11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(scrollBarCustom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8))
+                .addGap(22, 22, 22))
         );
         rectangleBorder1Layout.setVerticalGroup(
             rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rectangleBorder1Layout.createSequentialGroup()
                 .addGap(89, 89, 89)
-                .addGroup(rectangleBorder1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(scrollBarCustom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(buttonClear2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(buttonClear1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
@@ -250,7 +246,7 @@ public class Main1 extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 269, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -342,7 +338,7 @@ public class Main1 extends javax.swing.JFrame {
                     .addGroup(rectangle2Layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                         .addComponent(buttonIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, rectangle2Layout.createSequentialGroup()
@@ -414,7 +410,7 @@ public class Main1 extends javax.swing.JFrame {
                     .addGroup(rectangle3Layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                         .addComponent(buttonIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, rectangle3Layout.createSequentialGroup()
@@ -485,7 +481,7 @@ public class Main1 extends javax.swing.JFrame {
                     .addGroup(rectangle4Layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addComponent(jLabel12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                         .addComponent(buttonIcon4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, rectangle4Layout.createSequentialGroup()
@@ -557,7 +553,7 @@ public class Main1 extends javax.swing.JFrame {
                     .addGroup(rectangle5Layout.createSequentialGroup()
                         .addGap(91, 91, 91)
                         .addComponent(jLabel16)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
                         .addComponent(buttonIcon5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(19, 19, 19))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, rectangle5Layout.createSequentialGroup()
@@ -583,6 +579,7 @@ public class Main1 extends javax.swing.JFrame {
                 .addGap(24, 24, 24))
         );
 
+        comboBoxSuggestion1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Month", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }));
         comboBoxSuggestion1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxSuggestion1ActionPerformed(evt);
@@ -806,9 +803,14 @@ public class Main1 extends javax.swing.JFrame {
     private Rectangle.Rectangle rectangle5;
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder rectangleBorder2;
-    private expired.ScrollBarCustom scrollBarCustom1;
     private expired.ScrollBarCustom scrollBarCustom2;
     private expired.ScrollableComboBoxExample scrollableComboBoxExample1;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
+
+    private static class popLogout extends Component {
+
+        public popLogout() {
+        }
+    }
 }
