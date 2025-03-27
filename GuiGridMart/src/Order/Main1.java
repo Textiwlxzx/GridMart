@@ -35,6 +35,8 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
         OrderList orderList = new OrderList(productName);
         orderList.setProductName(productName);
         
+        orderList.setParentPanel(newJPanel2);
+        
         newJPanel2.add(orderList);
         newJPanel2.repaint();
         newJPanel2.revalidate();

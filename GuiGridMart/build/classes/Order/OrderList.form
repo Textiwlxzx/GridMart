@@ -95,6 +95,9 @@
               <Image iconType="3" name="/images/bin.png"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="buttonIcon1MouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

@@ -7,9 +7,11 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.RoundRectangle2D;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class OrderList extends javax.swing.JPanel {
 private String productName;
+private JPanel parentPanel;
 
     public OrderList(String labelText1) {
         initComponents();
@@ -60,6 +62,11 @@ private String productName;
         labelText6.setText("x");
 
         buttonIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bin.png"))); // NOI18N
+        buttonIcon1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttonIcon1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout rectanglepoom1Layout = new javax.swing.GroupLayout(rectanglepoom1);
         rectanglepoom1.setLayout(rectanglepoom1Layout);
@@ -102,6 +109,14 @@ private String productName;
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void buttonIcon1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonIcon1MouseClicked
+        parentPanel.remove(this);
+        parentPanel.revalidate();
+        parentPanel.repaint();
+    }//GEN-LAST:event_buttonIcon1MouseClicked
+public void setParentPanel(JPanel panel) {
+        this.parentPanel = panel;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private button.ButtonIcon buttonIcon1;
