@@ -1,19 +1,35 @@
 
 package Order;
 import Order.Main1.MyPanelContainer;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 public class ProductPanel1 extends javax.swing.JPanel {
-private MyPanelContainer container;
-    public ProductPanel1(MyPanelContainer container) {
-        this.container = container; 
+//private Main1 main;
+private OrderListAddable orderListHandler;
+ private static OrderListAddable defaultOrderListHandler;
+public ProductPanel1() {
         initComponents();
         setOpaque(false);
-        
+         
+        this.orderListHandler = defaultOrderListHandler;
+
+}
+public static void setDefaultOrderListHandler(OrderListAddable handler) {
+        defaultOrderListHandler = handler;
     }
 
 public String getProductName() {
         return labelText1.getText();
     }
+
+ //public void setMain(Main1 main) {
+   //     this.main = main;
+   // }
+ public void setOrderListHandler(OrderListAddable handler) {
+        this.orderListHandler = handler;
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -86,24 +102,19 @@ public String getProductName() {
 
     private void rectangle11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rectangle11MouseClicked
        String productName = getProductName();
-        addProductToOrderList(productName);
+        orderListHandler.addToOrderList(productName);
        
     }//GEN-LAST:event_rectangle11MouseClicked
-// void addProductToOrderList1(String proname){
-//   OrderList orderlist = new OrderList(proname);
     
-    //container.getNewJPanel2().add(orderlist);
-    //newJPanel2.repaint();
-    //newJPanel2.revalidate();
-//}         
-private void addProductToOrderList(String productName) {
-    OrderList orderList = new OrderList(productName); // สร้างอ็อบเจ็กต์ OrderList
-    orderList.setProductName(productName); // เซ็ตค่าชื่อสินค้า
-    
-    container.getNewJPanel2().add(orderList); // เพิ่มเข้า Panel
-    container.getNewJPanel2().repaint();
-    container.getNewJPanel2().revalidate();
-}
+//private void addProductToOrderList(String productName) {
+ //   OrderList orderList = new OrderList(productName);
+ //              orderList.setProductName(productName);
+ //              
+//                main.getOrderListPanel().add(orderList);
+ //               main.getOrderListPanel().repaint();
+ //               main.getOrderListPanel().revalidate();
+//}
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private CustomFont.LabelText labelText1;
     private CustomFont.LabelText labelText2;
