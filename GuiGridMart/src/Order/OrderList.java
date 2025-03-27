@@ -16,6 +16,7 @@ private JPanel parentPanel;
     public OrderList(String labelText1) {
         initComponents();
         labelText4.setText(labelText1);
+        textField2.setText("1");  
     }
      public void setProductName(String productName) {
         this.productName = productName;
@@ -45,11 +46,14 @@ private JPanel parentPanel;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        textField1 = new textfield.TextField();
         rectanglepoom1 = new Rectangle.Rectanglepoom();
         labelText4 = new CustomFont.LabelText();
-        labelText5 = new CustomFont.LabelText();
         labelText6 = new CustomFont.LabelText();
         buttonIcon1 = new button.ButtonIcon();
+        textField2 = new textfield.TextField();
+
+        textField1.setText("textField1");
 
         setPreferredSize(new java.awt.Dimension(273, 32));
 
@@ -57,14 +61,25 @@ private JPanel parentPanel;
 
         labelText4.setText("Product Name");
 
-        labelText5.setText("1");
-
         labelText6.setText("x");
 
         buttonIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bin.png"))); // NOI18N
         buttonIcon1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 buttonIcon1MouseClicked(evt);
+            }
+        });
+        buttonIcon1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                buttonIcon1ActionPerformed(evt);
+            }
+        });
+
+        textField2.setBackground(new java.awt.Color(239, 239, 239));
+        textField2.setPreferredSize(new java.awt.Dimension(40, 40));
+        textField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textField2ActionPerformed(evt);
             }
         });
 
@@ -75,24 +90,29 @@ private JPanel parentPanel;
             .addGroup(rectanglepoom1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(labelText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
+                .addComponent(textField2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(buttonIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
         rectanglepoom1Layout.setVerticalGroup(
             rectanglepoom1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectanglepoom1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(rectanglepoom1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(buttonIcon1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(rectanglepoom1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(labelText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(rectanglepoom1Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addGroup(rectanglepoom1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(textField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .addGroup(rectanglepoom1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelText4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(rectanglepoom1Layout.createSequentialGroup()
+                .addComponent(buttonIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -104,7 +124,7 @@ private JPanel parentPanel;
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(rectanglepoom1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(rectanglepoom1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -114,6 +134,14 @@ private JPanel parentPanel;
         parentPanel.revalidate();
         parentPanel.repaint();
     }//GEN-LAST:event_buttonIcon1MouseClicked
+
+    private void textField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField2ActionPerformed
+    
+    }//GEN-LAST:event_textField2ActionPerformed
+
+    private void buttonIcon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonIcon1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_buttonIcon1ActionPerformed
 public void setParentPanel(JPanel panel) {
         this.parentPanel = panel;
     }
@@ -121,8 +149,9 @@ public void setParentPanel(JPanel panel) {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private button.ButtonIcon buttonIcon1;
     private CustomFont.LabelText labelText4;
-    private CustomFont.LabelText labelText5;
     private CustomFont.LabelText labelText6;
     private Rectangle.Rectanglepoom rectanglepoom1;
+    private textfield.TextField textField1;
+    private textfield.TextField textField2;
     // End of variables declaration//GEN-END:variables
 }
