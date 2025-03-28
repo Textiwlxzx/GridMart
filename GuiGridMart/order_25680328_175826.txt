@@ -1,0 +1,9 @@
+Order Details
+-------------------
+Product: Name
+Quantity: 1
+-------------------
+Product: Name
+Quantity: 1
+-------------------
+Total Orders: 2

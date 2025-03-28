@@ -11,7 +11,7 @@ import raven.glasspanepopup.GlassPanePopup;
 
 
 public class Main1 extends javax.swing.JFrame implements OrderListAddable{
-    
+private OrderManager orderManager;
 
     public Main1() {
         ProductPanel1.setDefaultOrderListHandler(this);
@@ -20,6 +20,7 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
         dt();
         times();
         GlassPanePopup.install(this);
+        orderManager = new OrderManager(newJPanel2);
         
         //myPanelContainer = new MyPanelContainer();
         //productPanel11.setMain(this);
@@ -34,13 +35,10 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
      public void addToOrderList(String productName) {
         OrderList orderList = new OrderList(productName);
         orderList.setProductName(productName);
-        
+        orderManager.addOrderList(productName);
         orderList.setParentPanel(newJPanel2);
         
-        newJPanel2.add(orderList);
-        newJPanel2.repaint();
-        newJPanel2.revalidate();
-    }
+  }
 
     
     public void dt() {
@@ -55,6 +53,12 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
 
     Timer t;
     SimpleDateFormat st;
+    public void saveOrderListsToFile() {
+    // Generate a unique filename with timestamp
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
+    String timestamp = dateFormat.format(new Date());
+    String filename = "order_" + timestamp + ".txt";
+}
 
     public void times() {
     
@@ -76,8 +80,15 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
         t.start(); 
     }
 }
+public OrderManager getOrderManager() {
+        return orderManager;
+    }
 
-
+private void saveOrdersToFile() {
+        if (orderManager != null) {
+            orderManager.saveOrderListsToFile();
+        }
+    }
         
 
    
@@ -107,11 +118,11 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
         buttonIcon1 = new button.ButtonIcon();
         rectangleBorder11 = new Rectangle.RectangleBorder1();
         labelText1 = new CustomFont.LabelText();
-        button12 = new button.Button1();
         labelText6 = new CustomFont.LabelText();
         payment2 = new Order.Payment();
         scrollPaneWin112 = new Scroll.ScrollPaneWin11();
         newJPanel2 = new Rectangle.NewJPanel();
+        button12 = new button.Button1();
         productPanel12 = new Order.ProductPanel1();
         productPanel13 = new Order.ProductPanel1();
         productPanel14 = new Order.ProductPanel1();
@@ -239,7 +250,7 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -272,16 +283,6 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
         labelText1.setFont(new java.awt.Font("Afacad", 0, 28)); // NOI18N
         labelText1.setPreferredSize(new java.awt.Dimension(79, 32));
 
-        button12.setForeground(new java.awt.Color(0, 0, 0));
-        button12.setText("Pay");
-        button12.setFont(new java.awt.Font("Afacad", 1, 36)); // NOI18N
-        button12.setPreferredSize(new java.awt.Dimension(269, 74));
-        button12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button12ActionPerformed(evt);
-            }
-        });
-
         labelText6.setText("Payment");
         labelText6.setFont(new java.awt.Font("Afacad", 1, 30)); // NOI18N
 
@@ -292,6 +293,18 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
 
         newJPanel2.setPreferredSize(new java.awt.Dimension(295, 800));
         newJPanel2.setLayout(new java.awt.FlowLayout());
+
+        button12.setForeground(new java.awt.Color(0, 0, 0));
+        button12.setText("Pay");
+        button12.setFont(new java.awt.Font("Afacad", 1, 36)); // NOI18N
+        button12.setPreferredSize(new java.awt.Dimension(269, 74));
+        button12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button12ActionPerformed(evt);
+            }
+        });
+        newJPanel2.add(button12);
+
         scrollPaneWin112.setViewportView(newJPanel2);
 
         javax.swing.GroupLayout rectangleBorder11Layout = new javax.swing.GroupLayout(rectangleBorder11);
@@ -302,15 +315,14 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
                 .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(rectangleBorder11Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(payment2, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(button12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(scrollPaneWin112, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(scrollPaneWin112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(rectangleBorder11Layout.createSequentialGroup()
                         .addGap(123, 123, 123)
                         .addComponent(labelText1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         rectangleBorder11Layout.setVerticalGroup(
             rectangleBorder11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -323,9 +335,7 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
                 .addComponent(labelText6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(payment2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(button12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(43, 43, 43))
+                .addGap(135, 135, 135))
         );
 
         javax.swing.GroupLayout background1Layout = new javax.swing.GroupLayout(background1);
@@ -410,8 +420,10 @@ public class Main1 extends javax.swing.JFrame implements OrderListAddable{
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
+        saveOrdersToFile();
         if (payment2.isCashSelected()) {
             GlassPanePopup.showPopup(new Cash());
+            
         } else if (payment2.isQRSelected()) {
             GlassPanePopup.showPopup(new QR());
         }    }//GEN-LAST:event_button12ActionPerformed

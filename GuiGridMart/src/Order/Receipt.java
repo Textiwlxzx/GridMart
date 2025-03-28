@@ -85,6 +85,9 @@ public class Receipt extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         buttonClear7 = new button.ButtonClear();
+        scrollPaneWin111 = new Scroll.ScrollPaneWin11();
+        newJPanel1 = new Rectangle.NewJPanel();
+        receiptlist3 = new Order.Receiptlist();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -203,7 +206,7 @@ public class Receipt extends javax.swing.JFrame {
                 .addComponent(labelText5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(time, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 235, Short.MAX_VALUE)
                 .addComponent(buttonClear5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addComponent(labelText2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -270,37 +273,49 @@ public class Receipt extends javax.swing.JFrame {
             }
         });
 
+        scrollPaneWin111.setBorder(null);
+        scrollPaneWin111.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPaneWin111.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+        newJPanel1.setPreferredSize(new java.awt.Dimension(871, 900));
+        newJPanel1.setLayout(new java.awt.FlowLayout());
+        newJPanel1.add(receiptlist3);
+
+        scrollPaneWin111.setViewportView(newJPanel1);
+
         javax.swing.GroupLayout rectanglepoom2Layout = new javax.swing.GroupLayout(rectanglepoom2);
         rectanglepoom2.setLayout(rectanglepoom2Layout);
         rectanglepoom2Layout.setHorizontalGroup(
             rectanglepoom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rectanglepoom2Layout.createSequentialGroup()
+                .addGap(47, 47, 47)
                 .addGroup(rectanglepoom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(rectanglepoom2Layout.createSequentialGroup()
-                        .addGap(428, 428, 428)
-                        .addComponent(jLabel1))
+                        .addComponent(scrollPaneWin111, javax.swing.GroupLayout.PREFERRED_SIZE, 873, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(rectanglepoom2Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
                         .addGroup(rectanglepoom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(rectanglepoom2Layout.createSequentialGroup()
-                                .addGroup(rectanglepoom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel2))
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(381, 381, 381)
+                                .addComponent(jLabel1))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel2)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel3))))
-                .addGap(158, 158, 158)
-                .addComponent(buttonClear6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addComponent(buttonClear7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
+                            .addComponent(jLabel3))
+                        .addGap(158, 166, Short.MAX_VALUE)
+                        .addComponent(buttonClear6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(25, 25, 25)
+                        .addComponent(buttonClear7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(55, 55, 55))))
         );
         rectanglepoom2Layout.setVerticalGroup(
             rectanglepoom2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rectanglepoom2Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 477, Short.MAX_VALUE)
+                .addGap(4, 4, 4)
+                .addComponent(scrollPaneWin111, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
@@ -448,9 +463,12 @@ public class Receipt extends javax.swing.JFrame {
     private CustomFont.LabelText labelText2;
     private CustomFont.LabelText labelText3;
     private CustomFont.LabelText labelText5;
+    private Rectangle.NewJPanel newJPanel1;
+    private Order.Receiptlist receiptlist3;
     private Rectangle.RectangleBorder rectangleBorder1;
     private Rectangle.RectangleBorder rectangleBorder2;
     private Rectangle.Rectanglepoom rectanglepoom2;
+    private Scroll.ScrollPaneWin11 scrollPaneWin111;
     private CustomFont.LabelText time;
     // End of variables declaration//GEN-END:variables
 }
