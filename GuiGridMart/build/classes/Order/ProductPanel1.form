@@ -75,7 +75,7 @@
       <SubComponents>
         <Component class="CustomFont.LabelText" name="labelText1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Coke"/>
+            <Property name="text" type="java.lang.String" value="Name"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[152, 32]"/>
             </Property>

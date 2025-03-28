@@ -1,8 +1,5 @@
 
 package Order;
-import Order.Main1.MyPanelContainer;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 public class ProductPanel1 extends javax.swing.JPanel {
 //private Main1 main;
@@ -49,7 +46,7 @@ public String getProductName() {
             }
         });
 
-        labelText1.setText("Coke");
+        labelText1.setText("Name");
         labelText1.setPreferredSize(new java.awt.Dimension(152, 32));
 
         labelText2.setText("description");
@@ -59,7 +56,6 @@ public String getProductName() {
         labelText3.setText("left");
         labelText3.setFont(new java.awt.Font("Afacad", 0, 18)); // NOI18N
         labelText3.setMaximumSize(new java.awt.Dimension(2, 24));
-        labelText3.setPreferredSize(new java.awt.Dimension(24, 24));
 
         javax.swing.GroupLayout rectangle11Layout = new javax.swing.GroupLayout(rectangle11);
         rectangle11.setLayout(rectangle11Layout);
