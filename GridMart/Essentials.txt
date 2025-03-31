@@ -1,0 +1,3 @@
+Tissue,24psc./pack,100.0,120.0,04/04/2025,Essentials,C:\Z_Image\Essentials\tissue.png,31/03/2025,13
+Nivea Lotion,suncreen,150.0,189.0,04/04/2025,Essentials,C:\Z_Image\Essentials\lotion.png,31/03/2025,12
+Perfect Whip,cleansing foam,150.0,189.0,-,Essentials,C:\Z_Image\Essentials\perfect.png,-,0

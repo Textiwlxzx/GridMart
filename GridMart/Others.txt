@@ -1,0 +1,4 @@
+HongThai,save our souls,30.0,45.0,04/04/2025,Others,C:\Z_Image\Others\hongthai.png,31/03/2025,13
+Paracetamol,tylenol 500 for adult,55.0,80.0,04/04/2025,Others,C:\Z_Image\Others\medicine.png,31/03/2025,14
+Pen,3psc./pack,10.0,15.0,-,Others,C:\Z_Image\Others\pen.png,-,0
+Face Mask,iris ohyama,80.0,100.0,-,Others,C:\Z_Image\Others\mask.png,-,0

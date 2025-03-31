@@ -1,0 +1,5 @@
+Betagen,excellent taste,4.0,6.0,04/04/2025,Drinks,C:\Z_Image\Drinks\betagen.png,31/03/2025,9
+Coke,zaza,10.0,15.0,-,Drinks,C:\Z_Image\Drinks\coke.png,,0
+C-vitt,lemon,10.0,15.0,-,Drinks,C:\Z_Image\Drinks\cvitt.png,-,0
+M150,stay all night,9.0,12.0,-,Drinks,C:\Z_Image\Drinks\m150.png,-,0
+Nescafe,no sleep,12.0,20.0,-,Drinks,C:\Z_Image\Drinks\nescafe.png,-,0

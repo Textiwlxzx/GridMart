@@ -1,0 +1,6 @@
+1|Betagen,6.0,1,6.0,10.0,Cash
+2|Betagen,6.0,1,6.0,0.0,QR
+3|Betagen,6.0,1,6.0,10.0,Cash
+4|Betagen,6.0,1,6.0,0.0,QR
+5|Betagen,6.0,1,6.0,15.0,Cash
+6|Betagen,6.0,1,6.0,0.0,QR

@@ -1,0 +1,17 @@
+31/03/2025,Betagen,15
+31/03/2025,Coke,15
+31/03/2025,BengBeng,15
+31/03/2025,Bigga,15
+31/03/2025,Mama Thai,15
+31/03/2025,Korea Mama,15
+31/03/2025,Tissue,15
+31/03/2025,Nivea Lotion,15
+31/03/2025,HongThai,15
+31/03/2025,Paracetamol,15
+31/03/2025,Betagen,10
+31/03/2025, Betagen,10
+31/03/2025,Betagen,10
+31/03/2025,Betagen,15
+31/03/2025,Coke,10
+31/03/2025,Coke,15
+31/03/2025,Coke,15
